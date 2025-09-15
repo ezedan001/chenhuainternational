@@ -158,9 +158,10 @@ body.dark-mode .footer {
 
 body.dark-mode .foote {
   background-color: #1e1e1e;
-   border-bottom-color: #333;
+  border-bottom-color: #333;
   color: #eee;
 }
+
 /* Add any other dark mode color tweaks as needed */
 
 
@@ -186,6 +187,7 @@ body.dark-mode .foote {
   color: #333;
   text-decoration: none;
 }
+
 
 /* Main Nav Desktop */
 .main-nav ul {
@@ -582,132 +584,569 @@ body.dark-mode .foote {
   }
 }
 
+/* Hero section end */
 
 
 
 
-
-
-.featured-products {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 60px 30px;
-  text-align: center;
-  background: #f8f8f8;
+/* About Section */
+.about {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  /* position: relative; */
+  position: sticky;
 }
 
-.featured-products .featured-text {
-  font-size: 2.8rem;
-  margin-bottom: 40px;
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1 1 45%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.about-content {
+  flex: 1 1 50%;
+}
+
+.about-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.about-content h2 span {
+  color: #ff6600;
+  /* Brand highlight */
+}
+
+.about-content .tagline {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.business-scope h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.business-scope ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.business-scope ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.business-scope ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ff6600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff6600;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e05500;
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+  }
+}
+
+/* About section end */
+
+
+
+
+
+/* Products Preview Section */
+.products-preview {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
   font-weight: 700;
   color: #222;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 35px;
+/* Slider container */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
 }
 
+/* Slides wrapper */
+.slides {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
+}
+
+/* Product card */
 .product-card {
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  min-width: 100%;
+  box-sizing: border-box;
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
 }
 
 .product-card img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  max-height: 250px;
+  object-fit: contain;
+  /* show full image */
   border-radius: 12px;
-  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .product-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #333;
+  margin: 15px 0;
+  font-size: 1.2rem;
   font-weight: 600;
-}
-
-.price {
-  font-weight: 700;
-  font-size: 1.3rem;
-  color: #ff6600;
-  margin-bottom: 20px;
 }
 
 .btn {
-  background-color: #ff6600;
-  border: none;
-  padding: 12px 28px;
-  color: white;
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 8px;
+  background: #ff6600;
+  color: #fff;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  text-decoration: none;
 }
 
 .btn:hover {
-  background-color: #e65c00;
+  background: #e05500;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow.prev {
+  left: 15px;
+}
+
+.arrow.next {
+  right: 15px;
+}
+
+/* Dots */
+.dots {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dots button {
+  width: 12px;
+  height: 12px;
+  background: #bbb;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dots button.active {
+  background: #ff6600;
+}
+
+/* See all button */
+.see-all {
+  margin-top: 25px;
+}
+
+.see-all-btn {
+  background: #222;
+}
+
+.see-all-btn:hover {
+  background: #000;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .product-card {
+    min-width: 50%;
+    /* 2 items per view on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-card {
+    min-width: 25%;
+    /* 4 items per view on desktop */
+  }
+}
+
+
+/* feature product end  */
+
+
+
+
+
+
+/* ---------- Workshop Section ---------- */
+.workshop-section {
+  padding: 80px 5%;
+  background: #fef7f7;
+  /* Dark industrial look */
+  color: #fff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Section title and subtitle */
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ff6600;
+  /* Orange accent */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: #424242;
+}
+
+/* Workshop gallery grid */
+.workshop-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.workshop-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay text */
+.workshop-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.workshop-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.workshop-card:hover img {
+  transform: scale(1.1);
+}
+
+.workshop-card:hover .overlay {
+  transform: translateY(0);
+}
+
+/* Workshop stats */
+.workshop-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.workshop-stats div {
+  text-align: center;
+}
+
+.workshop-stats h3 {
+  font-size: 2rem;
+  color: #ff6600;
+  margin-bottom: 5px;
+}
+
+.workshop-stats p {
+  font-size: 1rem;
+  color: #494949;
+}
+
+/* Call to action button */
+.workshop-section .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.workshop-section .btn:hover {
+  background-color: #ff8533;
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 102, 0, 0.4);
 }
 
-/* Tablets */
-@media (max-width: 991px) {
-  .featured-products {
-    padding: 40px 25px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .workshop-gallery {
+    grid-template-columns: 1fr 1fr;
   }
 
-  .featured-products .featured-text {
-    font-size: 2.3rem;
+  .workshop-card img {
+    height: 180px;
   }
 
-  .product-card img {
-    height: 200px;
+  .section-title {
+    font-size: 2.2rem;
   }
 }
 
-/* Phones */
-@media (max-width: 600px) {
-  .featured-products {
-    padding: 30px 30px;
-    max-width: 90%;
+@media (max-width: 480px) {
+  .workshop-gallery {
+    grid-template-columns: 1fr;
   }
 
-  .featured-products .featured-text {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .workshop-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* workshop-section scene end  */
+
+
+
+
+
+
+
+
+
+/* ---------- Honor & Qualification Section ---------- */
+.honor-section {
+  padding: 80px 5%;
+  background: #fef7f7;
+  /* Dark professional background */
+  color: #fff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Section title and subtitle */
+.honor-section .section-title {
+  font-size: 3rem;
+  color: #ff6600;
+  /* Orange accent */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.honor-section .section-subtitle {
+  font-size: 1.2rem;
+  color: #3e3e3e;
+  margin-bottom: 50px;
+}
+
+/* Honor gallery grid */
+.honor-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Honor card */
+.honor-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.honor-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Honor text */
+.honor-card span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ff8c42;
+  text-align: center;
+}
+
+/* Hover effects */
+.honor-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.honor-card:hover img {
+  transform: scale(1.2) rotate(-2deg);
+  filter: brightness(1.2);
+}
+
+/* Contact button */
+.honor-section .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.honor-section .btn:hover {
+  background-color: #ff8533;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .honor-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .honor-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .honor-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .honor-section .section-title {
     font-size: 2rem;
-    margin-bottom: 30px;
   }
 
-  .product-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .price {
-    font-size: 1.1rem;
-  }
-
-  .btn {
-    width: 100%;
+  .honor-section .section-subtitle {
     font-size: 1rem;
-    padding: 14px;
-  }
-
-  .product-card img {
-    height: 150px;
   }
 }
 
+/* ---------- Honor & Qualification Section end ---------- */
 
 
 
