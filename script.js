@@ -150,6 +150,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+/* 🔹 Workshop Videos Section */
+
+
+// Select elements
+const videoCards = document.querySelectorAll('.video-card video');
+const modal = document.getElementById('videoModal');
+const modalVideo = document.getElementById('modalVideo');
+const closeBtn = document.querySelector('.close-btn');
+
+// Open modal
+videoCards.forEach(video => {
+  video.addEventListener('click', () => {
+    modal.classList.add('active');
+    modalVideo.src = video.src;
+    modalVideo.play();
+  });
+});
+
+// Close modal
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+  modalVideo.pause();
+  modalVideo.src = "";
+});
+
+// Close modal on outside click
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('active');
+    modalVideo.pause();
+    modalVideo.src = "";
+  }
+});
+
+
+/* 🔹 Workshop Videos Section end */
+
+
+
+
+
+
+
+
+
+
+
+
 // // Move to slide
 // function moveToSlide(index) {
 //   track.style.transform = `translateX(-${slideWidth * index}px)`;
