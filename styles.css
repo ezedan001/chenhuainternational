@@ -1021,6 +1021,50 @@ body.dark-mode .foote {
     flex-direction: column;
     gap: 30px;
   }
+
+  /* Reuse your workshop-section CSS from homepage and just add Lightbox */
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .lightbox-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+  }
+
+  #caption {
+    margin: 15px auto;
+    text-align: center;
+    color: #ff6600;
+    font-size: 1.2rem;
+  }
+
+  .lightbox .close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .lightbox .close:hover {
+    color: #ff6600;
+  }
 }
 
 /* workshop-section scene end  */
@@ -1045,7 +1089,8 @@ body.dark-mode .foote {
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #ff6600; /* Brand orange */
+  color: #ff6600;
+  /* Brand orange */
 }
 
 .workshop-videos .section-subtitle {
@@ -1069,7 +1114,7 @@ body.dark-mode .foote {
   overflow: hidden;
   margin: 0 auto;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1085,7 +1130,7 @@ body.dark-mode .foote {
 
 .video-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
 }
 
 .video-card:hover video {
@@ -1102,7 +1147,7 @@ body.dark-mode .foote {
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   text-align: center;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1112,7 +1157,7 @@ body.dark-mode .foote {
 .video-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1133,7 +1178,7 @@ body.dark-mode .foote {
   max-height: 80%;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.8);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
 }
 
 .video-modal-content video {
@@ -1163,6 +1208,7 @@ body.dark-mode .foote {
   .workshop-videos .section-title {
     font-size: 1.8rem;
   }
+
   .video-overlay {
     font-size: 0.9rem;
   }

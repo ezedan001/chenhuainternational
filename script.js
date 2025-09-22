@@ -190,6 +190,19 @@ modal.addEventListener('click', (e) => {
 
 
 
+//....Our Workshop...//
+function openLightbox(img) {
+  document.getElementById("lightbox").style.display = "block";
+  document.getElementById("lightbox-img").src = img.src;
+  document.getElementById("caption").innerText = img.alt;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+//....Our Workshop end...//
+
+
 
 
 
