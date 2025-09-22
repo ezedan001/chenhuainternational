@@ -167,7 +167,6 @@
     <video autoplay muted loop playsinline class="hero-video">
       <source src="movie/mmexport1757946703027.mp4" type="video/mp4">
       <!-- Fallback image if video fails -->
-      <img src="images/banner1.jpg" alt="Hero Background" class="hero-fallback">
     </video>
 
     <div class="hero-overlay"></div>
@@ -223,9 +222,6 @@
   </section>
 
   <!-- About section end -->
-
-
-
 
 
 
@@ -305,49 +301,72 @@
 
 
 
-  <!-- workshop-section scene -->
-  <section id="workshop" class="workshop-section">
+  <!-- About Page Workshop Section -->
+  <section id="about-workshop" class="workshop-section">
     <h2 class="section-title">Our Workshop</h2>
-    <p class="section-subtitle">Where quality Agricultural Wheels & Tires are made</p>
+    <p class="section-subtitle">Inside our facility – where rims & tires are crafted with precision</p>
 
     <div class="workshop-gallery">
+      <!-- 8 workshop images -->
       <div class="workshop-card">
-        <img src="images/rim cutting.jpg" alt="Rim Cutting">
-        <div class="overlay">Rim Cutting & Shaping</div>
+        <img src="images/Rim Cutting.jpg" alt="Rim Cutting" onclick="openLightbox(this)">
+        <div class="overlay">Rim Cutting</div>
       </div>
       <div class="workshop-card">
-        <img src="images/Welding Workshop.jpg" alt="Welding Workshop">
-        <div class="overlay">Welding Workshop</div>
+        <img src="images/welding.jpg" alt="Welding" onclick="openLightbox(this)">
+        <div class="overlay">Welding</div>
       </div>
       <div class="workshop-card">
-        <img src="images/Painting Line.jpg" alt="Painting Line">
+        <img src="images/Painting Line.jpg" alt="Painting" onclick="openLightbox(this)">
         <div class="overlay">Painting Line</div>
       </div>
       <div class="workshop-card">
-        <img src="images/Quality Inspection.jpg" alt="Quality Inspection">
+        <img src="images/Quality Inspection.jpg" alt="Inspection" onclick="openLightbox(this)">
         <div class="overlay">Quality Inspection</div>
       </div>
+      <!-- <div class="workshop-card">
+        <img src="images/assembly.jpg" alt="Assembly" onclick="openLightbox(this)">
+        <div class="overlay">Assembly</div>
+      </div>
+      <div class="workshop-card">
+        <img src="images/Storage.jpg" alt="Storage" onclick="openLightbox(this)">
+        <div class="overlay">Storage</div>
+      </div>
+      <div class="workshop-card">
+        <img src="images/Loading Bay.jpg" alt="Loading" onclick="openLightbox(this)">
+        <div class="overlay">Loading Bay</div>
+      </div>
+      <div class="workshop-card">
+        <img src="images/Final Delivery.jpg" alt="Delivery" onclick="openLightbox(this)">
+        <div class="overlay">Final Delivery</div>
+      </div> -->
     </div>
 
+    <!-- Stats -->
     <div class="workshop-stats">
       <div>
-        <h3>5000+</h3>
-        <p>Wheels Produced Monthly</p>
+        <h3>8000+</h3>
+        <p>Rims Produced Monthly</p>
       </div>
       <div>
-        <h3>100+</h3>
+        <h3>150+</h3>
         <p>Skilled Workers</p>
       </div>
       <div>
-        <h3>20+</h3>
-        <p>Years Manufacturing Experience</p>
+        <h3>25+</h3>
+        <p>Years Manufacturing Excellence</p>
       </div>
     </div>
 
     <a href="contact.html" class="btn">Get in Touch</a>
   </section>
 
-  <!-- workshop-section scene end -->
+  <!-- Lightbox Popup -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="caption"></div>
+  </div>
 
 
 
@@ -405,7 +424,7 @@
         <span>ISO 9001:2015</span>
       </div>
       <div class="honor-card">
-        <img src="images/cerification.jpg 2" alt="CE Certification">
+        <img src="images/cerification.jpg" alt="CE Certification">
         <span>CE Certification</span>
       </div>
       <div class="honor-card">
@@ -424,6 +443,12 @@
 
   <!--..... Our Honors & Qualifications end...... -->
 
+
+
+
+
+
+  
 
 
 
@@ -659,7 +684,7 @@
     <div class="footer-container">
       <!-- Logo & About -->
       <div class="footer-section footer-logo">
-        <img src="images/agric 3.jpg" alt="CHENHUA AUTO Logo" />
+        <img src="images/logo.png" alt="CHENHUA AUTO Logo" />
 
       </div>
 
@@ -1066,6 +1091,11 @@ ${name}`);
       });
     </script>
     <!-- End of Tawk.to Script -->
+
+
+
+
+
 
 
 

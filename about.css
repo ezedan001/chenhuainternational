@@ -752,8 +752,479 @@ body.dark-mode .foote {
 
 
 
+/* ---------- Workshop Section ---------- */
+.workshop-section {
+  padding: 10px 5%;
+  background: #fef7f7;
+  /* Dark industrial look */
+  color: #fff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Section title and subtitle */
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ff6600;
+  /* Orange accent */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: #424242;
+}
+
+/* Workshop gallery grid */
+.workshop-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.workshop-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay text */
+.workshop-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.workshop-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.workshop-card:hover img {
+  transform: scale(1.1);
+}
+
+.workshop-card:hover .overlay {
+  transform: translateY(0);
+}
+
+/* Workshop stats */
+.workshop-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.workshop-stats div {
+  text-align: center;
+}
+
+.workshop-stats h3 {
+  font-size: 2rem;
+  color: #ff6600;
+  margin-bottom: 5px;
+}
+
+.workshop-stats p {
+  font-size: 1rem;
+  color: #494949;
+}
+
+/* Call to action button */
+.workshop-section .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.workshop-section .btn:hover {
+  background-color: #ff8533;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .workshop-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .workshop-card img {
+    height: 180px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .workshop-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .workshop-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* Reuse your workshop-section CSS from homepage and just add Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+#caption {
+  margin: 15px auto;
+  text-align: center;
+  color: #ff6600;
+  font-size: 1.2rem;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lightbox .close:hover {
+  color: #ff6600;
+}
 
 
+/* workshop-section scene end  */
+
+
+
+
+
+
+
+
+
+/* ===== Workshop Videos Section ===== */
+.workshop-videos {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  text-align: center;
+  color: #fff;
+}
+
+.workshop-videos .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ff6600;
+  /* Brand orange */
+}
+
+.workshop-videos .section-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+/* Video Gallery Grid */
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.video-card {
+  position: relative;
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+.video-card:hover video {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/* ===== Modal Popup ===== */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.video-modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.video-modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+}
+
+.video-modal-content video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Close Button */
+.video-modal .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.video-modal .close-btn:hover {
+  color: #ff6600;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .workshop-videos .section-title {
+    font-size: 1.8rem;
+  }
+
+  .video-overlay {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* 🔹 Workshop Videos Section end */
+
+
+
+
+
+
+
+
+/* ---------- Honor & Qualification Section ---------- */
+.honor-section {
+  padding: 80px 5%;
+  background: #fef7f7;
+  /* Dark professional background */
+  color: #fff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Section title and subtitle */
+.honor-section .section-title {
+  font-size: 3rem;
+  color: #ff6600;
+  /* Orange accent */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.honor-section .section-subtitle {
+  font-size: 1.2rem;
+  color: #3e3e3e;
+  margin-bottom: 50px;
+}
+
+/* Honor gallery grid */
+.honor-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Honor card */
+.honor-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.honor-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Honor text */
+.honor-card span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ff8c42;
+  text-align: center;
+}
+
+/* Hover effects */
+.honor-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.honor-card:hover img {
+  transform: scale(1.2) rotate(-2deg);
+  filter: brightness(1.2);
+}
+
+/* Contact button */
+.honor-section .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.honor-section .btn:hover {
+  background-color: #ff8533;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .honor-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .honor-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .honor-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .honor-section .section-title {
+    font-size: 2rem;
+  }
+
+  .honor-section .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- Honor & Qualification Section end ---------- */
 
 
 

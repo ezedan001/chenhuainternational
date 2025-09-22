@@ -114,6 +114,65 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+//....Our Workshop...//
+function openLightbox(img) {
+  document.getElementById("lightbox").style.display = "block";
+  document.getElementById("lightbox-img").src = img.src;
+  document.getElementById("caption").innerText = img.alt;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+//....Our Workshop end...//
+
+
+
+
+/* 🔹 Workshop Videos Section */
+
+
+// Select elements
+const videoCards = document.querySelectorAll('.video-card video');
+const modal = document.getElementById('videoModal');
+const modalVideo = document.getElementById('modalVideo');
+const closeBtn = document.querySelector('.close-btn');
+
+// Open modal
+videoCards.forEach(video => {
+  video.addEventListener('click', () => {
+    modal.classList.add('active');
+    modalVideo.src = video.src;
+    modalVideo.play();
+  });
+});
+
+// Close modal
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+  modalVideo.pause();
+  modalVideo.src = "";
+});
+
+// Close modal on outside click
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('active');
+    modalVideo.pause();
+    modalVideo.src = "";
+  }
+});
+
+
+/* 🔹 Workshop Videos Section end */
+
+
+
+
+
+
+
+
 // const track = document.querySelector('.carousel-track');
 
 // track.addEventListener('mouseenter', () => {
