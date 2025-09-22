@@ -72,7 +72,88 @@ if (mobileModeToggle) mobileModeToggle.addEventListener('click', toggleDarkMode)
 
 
 
+// Automatically update current year
+document.getElementById("year").textContent = new Date().getFullYear();
+// Automatically update current year///
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Time-based greeting
+function getGreeting() {
+    const hour = new Date().getHours();
+    if (hour < 12) return "Good morning";
+    if (hour < 18) return "Good afternoon";
+    return "Good evening";
+}
+
+// Random template
+function getRandomTemplate() {
+    const templates = [
+        "I would like to inquire about your products and services.",
+        "Please share your latest catalog and pricing.",
+        "We are interested in collaborating with CHENHUA AUTO.",
+        "Kindly provide more details about your offerings."
+    ];
+    return templates[Math.floor(Math.random() * templates.length)];
+}
+
+// Fetch country
+async function fetchCountry() {
+    try {
+        const res = await fetch("https://ipapi.co/json/");
+        const data = await res.json();
+        return data.country_name || "your country";
+    } catch {
+        return "your country";
+    }
+}
+
+// Generate dynamic email link
+async function generateEmailLink() {
+    const greeting = getGreeting();
+    const suggestion = getRandomTemplate();
+    const country = await fetchCountry();
+
+    const body = `${greeting},
+
+${suggestion}
+
+🌍 I am contacting you from ${country}.
+
+Before we continue, please help us with the following details:
+
+🔹 Full Name:  
+🔹 Company Name:  
+🔹 Phone Number:  
+
+Our CHENHUA AUTO team will reply as soon as possible.
+
+Best regards,  
+[Your Name]`;
+
+    const subject = "Privacy Inquiry";
+    const email = "18054365167@163.com";
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Inject into page
+    document.getElementById("dynamic-email").innerHTML =
+        `📧 Email: <a href="${mailtoLink}">${email}</a>`;
+}
+
+generateEmailLink();
 
 
 
@@ -162,7 +243,7 @@ const translations = {
 
         toggle_theme: "Toggle Theme"
     },
-    
+
     fr: {
         home: "Accueil",
         products: "Produits",

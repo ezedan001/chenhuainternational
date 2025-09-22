@@ -170,6 +170,73 @@ modal.addEventListener('click', (e) => {
 
 
 
+// Automatically update current year
+document.getElementById("year").textContent = new Date().getFullYear();
+// Automatically update current year///
+
+
+
+
+
+
+
+const slider = document.getElementById("certSlider");
+    const pagination = document.getElementById("certPagination");
+    const itemsPerPage = 4;
+    let currentPage = 0;
+    let autoplayInterval;
+
+    const certItems = Array.from(slider.children);
+    const totalPages = Math.ceil(certItems.length / itemsPerPage);
+
+    function renderPage(page) {
+      slider.innerHTML = "";
+      const start = page * itemsPerPage;
+      const end = start + itemsPerPage;
+      certItems.slice(start, end).forEach(item => {
+        slider.appendChild(item);
+      });
+
+      // Update pagination dots
+      const dots = pagination.querySelectorAll('.cert-dot');
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === page);
+      });
+    }
+
+    function createDots() {
+      for (let i = 0; i < totalPages; i++) {
+        const dot = document.createElement("span");
+        dot.classList.add("cert-dot");
+        if (i === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          currentPage = i;
+          renderPage(currentPage);
+          restartAutoplay();
+        });
+        pagination.appendChild(dot);
+      }
+    }
+
+    function startAutoplay() {
+      autoplayInterval = setInterval(() => {
+        currentPage = (currentPage + 1) % totalPages;
+        renderPage(currentPage);
+      }, 4000); // 4 seconds delay
+    }
+
+    function restartAutoplay() {
+      clearInterval(autoplayInterval);
+      startAutoplay();
+    }
+
+    // Initialize
+    createDots();
+    renderPage(currentPage);
+    startAutoplay();
+
+
+
 
 
 
