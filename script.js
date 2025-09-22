@@ -190,6 +190,18 @@ modal.addEventListener('click', (e) => {
 
 
 
+
+//....footer..../
+  // Automatically update current year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+// Automatically update current year///
+
+
+
+
+
+
 //....Our Workshop...//
 function openLightbox(img) {
   document.getElementById("lightbox").style.display = "block";

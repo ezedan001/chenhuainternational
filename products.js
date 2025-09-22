@@ -438,3 +438,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
   changeLanguage(savedLang);
 });
+
+
+
+
+
+
+
+
+
+// Automatically update current year///
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Automatically update current year//
