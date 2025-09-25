@@ -211,6 +211,88 @@ CHENHUA AUTO`;
 
 
 
+
+
+
+
+
+
+
+const carousel = document.querySelector(".carousel-wrapper");
+let scrollAmount = 0;
+
+// Swipe support
+let isDown = false, startX, scrollLeft;
+
+carousel.addEventListener("mousedown", (e) => {
+  isDown = true;
+  carousel.classList.add("active");
+  startX = e.pageX - carousel.offsetLeft;
+  scrollLeft = carousel.scrollLeft;
+});
+carousel.addEventListener("mouseleave", () => { isDown = false; carousel.classList.remove("active"); });
+carousel.addEventListener("mouseup", () => { isDown = false; carousel.classList.remove("active"); });
+carousel.addEventListener("mousemove", (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - carousel.offsetLeft;
+  const walk = (x - startX) * 2;
+  carousel.scrollLeft = scrollLeft - walk;
+});
+
+// Auto-scroll carousel
+setInterval(() => {
+  carousel.scrollLeft += 2;
+  if(carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth){
+    carousel.scrollLeft = 0;
+  }
+}, 30);
+
+// Dynamic Filtering
+function filterProducts() {
+  const category = document.getElementById("filter-category").value;
+  const size = document.getElementById("filter-size").value;
+
+  const cards = document.querySelectorAll(".product-card");
+
+  cards.forEach(card => {
+    card.style.display = "none";
+    if((!category || card.dataset.category === category) &&
+       (!size || card.dataset.size === size)) {
+      card.style.display = "block";
+    }
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll('.product-img img');
 

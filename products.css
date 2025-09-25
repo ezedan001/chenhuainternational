@@ -639,121 +639,158 @@ body.dark-mode .foote {
 
 
 /* ========== PRODUCT GRID ========== */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 10px;
-  padding: 10px 50px;
-  max-width: 1400px;
-  margin: 0 auto;
+/* ===============================
+   Filter Section
+   =============================== */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px auto;
+  max-width: 1200px;
 }
 
-/* ========== PRODUCT CARD ========== */
+.filter-group label {
+  font-weight: 600;
+  color: #ff6600;
+  margin-right: 10px;
+}
+
+.filter-group select {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.filter-group select:hover {
+  border-color: #ff6600;
+}
+
+/* ===============================
+   Product Grid
+   =============================== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+  max-width: 1300px;
+  margin: auto;
+  transition: all 0.5s ease;
+}
+
+/* ===============================
+   Product Card
+   =============================== */
 .product-card {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  text-align: center;
+  background: linear-gradient(145deg, #1b1b1b, #232323);
+  border-radius: 20px;
+  overflow: hidden;
   padding: 20px;
-  transition: transform 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  transform-style: preserve-3d;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
+  transform: rotateY(3deg) scale(1.03);
+  box-shadow: 0 15px 45px rgba(255, 102, 0, 0.4);
 }
 
-/* ========== PRODUCT IMAGE ========== */
-.product-img {
-  overflow: hidden;
-  border-radius: 12px;
-  height: 200px;
-  margin-bottom: 15px;
-}
-
+/* ===============================
+   Product Image
+   =============================== */
 .product-img img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  border-radius: 15px;
   transition: transform 0.4s ease;
 }
 
-.product-img:hover img {
-  transform: scale(1.1);
+.product-card:hover .product-img img {
+  transform: scale(1.08);
 }
 
-/* ========== QTY INPUT ========== */
-.qty-input {
-  margin: 10px auto;
-  width: 80px;
-  padding: 6px 10px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-/* ========== CONTACT BUTTONS ========== */
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 12px;
-  flex-wrap: wrap;
-}
-
-.contact-buttons button {
-  background: #ff6600;
+/* ===============================
+   Product Info
+   =============================== */
+.product-card h3 {
   color: #fff;
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   Quantity Input
+   =============================== */
+.qty-input {
+  width: 60px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   Contact Buttons
+   =============================== */
+.contact-buttons button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: #ff6600;
   border: none;
-  padding: 10px 16px;
-  border-radius: 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
   cursor: pointer;
-  font-size: 14px;
-  transition: background 0.3s;
+  transition: 0.3s ease;
 }
 
 .contact-buttons button:hover {
-  background: #cc5200;
+  background-color: #ff8533;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
-@media (max-width: 991px) {
-  .product-card {
-    padding: 16px;
-  }
+/* ===============================
+   Fade Animation for Filtering
+   =============================== */
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
 
-  .product-img {
-    height: auto;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-
-  .qty-input {
-    width: 70px;
-    font-size: 13px;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  .contact-buttons button {
-    font-size: 13px;
-    padding: 8px 12px;
+/* ===============================
+   Responsive Grid
+   =============================== */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .product-grid {
-    padding: 30px 30px;
-    gap: 16px;
-  }
-
-  .product-img {
-    height: auto;
-  }
-
-  .qty-input {
-    width: 60px;
+    grid-template-columns: 1fr;
   }
 }
+
 
 
 

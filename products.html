@@ -170,11 +170,20 @@
 
 
 
+
+
+
+
+
+
+
+  <!-- Filter Section -->
   <section class="filter-section">
     <div class="filter-group">
-      <label for="filter-size" data-i18n="filter_by_size">Filter by Size:</label>
+      <label for="filter-size">Filter by Size:</label>
       <select id="filter-size" onchange="filterProducts()">
-        <option value="" data-i18n="all_size">All Sizes</option>
+        <option value="">All Sizes</option>
+        <option value="15X28">15X28</option>
         <option value="W10×36">W10×36"</option>
         <option value="W12×46">W12×46"</option>
         <option value="W8x36">W8x36"</option>
@@ -185,142 +194,58 @@
     </div>
 
     <div class="filter-group">
-      <label for="filter-type" data-i18n="filter_by_type">Filter by Type:</label>
+      <label for="filter-type">Filter by Type:</label>
       <select id="filter-type" onchange="filterProducts()">
-        <option value="" data-i18n="all_types">All Types</option>
-        <option value="Disc" data-i18n="disc">Disc</option>
-        <option value="Split" data-i18n="split">Split</option>
-        <option value="Solid" data-i18n="solid">Solid</option>
+        <option value="">All Types</option>
+        <option value="Agriculture">Agriculture & Forestry Wheels</option>
+        <option value="Aluminum">Aluminum Alloy Wheels</option>
+        <option value="Tubeless">Tubeless Wheels</option>
+        <option value="Engineering">Engineering Machinery Wheels</option>
       </select>
     </div>
   </section>
 
-
-
-
-
-
-
+  <!-- Product Grid -->
   <section class="product-grid">
-    <div class="product-card" data-size="W10×36" data-type="Disc">
+    <div class="product-card" data-size="15X28" data-type="Agriculture">
       <div class="product-img">
-        <img src="W10×36农业黄/agric a.jpg" alt="CHENHUA W10×36 inch Tractor Rim" />
+        <img src="Agriculture/15X28 Flanged.jpg" alt="CHENHUA 15X28 Flanged Rim">
       </div>
-      <h3>CH-AG 10” Rim</h3>
-      <p>Size: W10×36 inches</p>
-
+      <h3>Flanged 15X28” Rim</h3>
+      <p>Size: 15X28 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
-
-
-    <div class="product-card" data-size="W10×36" data-type="Disc">
+    <div class="product-card" data-size="5.50FX20" data-type="Agriculture">
       <div class="product-img">
-        <img src="W10×36农业黄/agric b.jpg" alt="CHENHUA W10×36 inch Tractor Rim" />
+        <img src="Agriculture/5.50FX20 Welding Type.jpg" alt="CHENHUA Aluminum Rim">
       </div>
-      <h3>CH-AG 10” Rim</h3>
-      <p>Size: W10×36 inches</p>
-
+      <h3>Welding Type 5.50FX20” Rim</h3>
+      <p>Size: 5.50FX20 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
-
-
-    <div class="product-card" data-size="W10×36" data-type="Disc">
+    <div class="product-card" data-size="9.00×15.3" data-type="Agriculture">
       <div class="product-img">
-        <img src="W10×36农业黄/agric f.jpg" alt="CHENHUA W10×36 inch Tractor Rim" />
+        <img src="Agriculture/9.00×15.3 Welding Type.jpg" alt="CHENHUA Tubeless Rim">
       </div>
-      <h3>CH-AG 10” Rim</h3>
-      <p>Size: W10×36 inches</p>
-
+      <h3>Welding Type 9.00×15.3” Rim</h3>
+      <p>Size: 9.00×15.3 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-size="W10×36" data-type="Disc">
-      <div class="product-img">
-        <img src="W10×36农业黄/agric h.jpg" alt="CHENHUA W10×36 inch Tractor Rim" />
-      </div>
-      <h3>CH-AG 10” Rim</h3>
-      <p>Size: W10×36 inches</p>
-
-      <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
-      <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-size="W10×36" data-type="Disc">
-      <div class="product-img">
-        <img src="W10×36农业黄/agric i.jpg" alt="CHENHUA W10×36 inch Tractor Rim" />
-      </div>
-      <h3>CH-AG 10” Rim</h3>
-      <p>Size: W10×36 inches</p>
-
-      <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
-      <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
-      </div>
-    </div>
-
-
-
-    <div class="product-card" data-size="W10×36" data-type="Disc">
-      <div class="product-img">
-        <img src="W10×36农业黄/agric j.jpg" alt="CHENHUA W10×36 inch Tractor Rim" />
-      </div>
-      <h3>CH-AG 10” Rim</h3>
-      <p>Size: W10×36 inches</p>
-
-      <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
-      <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
-      </div>
-    </div>
-
-
-
-    <div class="product-card" data-size="W10×36" data-type="Disc">
-      <div class="product-img">
-        <img src="W10×36农业黄/agric k.jpg" alt="CHENHUA 16 inch Tractor Rim" />
-      </div>
-      <h3>CH-AG 10” Rim</h3>
-      <p>Size: W10×36 inches</p>
-
-      <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
-      <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
@@ -329,115 +254,66 @@
 
 
 
-
-
-
-
-    <!-- 🛠️ Duplicate this block for each rim product, change data-size, name, etc. -->
-
-
-    <div class="product-card" data-size="W12×46" data-type="Disc">
+    <!-- Display of Bolt Welding -->
+    <div class="product-card" data-size="" data-type="Agriculture">
       <div class="product-img">
-        <img src="W12×46农业黄/AGRIC 11.jpg" alt="CHENHUA W12×46 inch Tractor Rim" />
+        <img src="Agriculture/Display of Bolt Welding.jpg" alt="CHENHUA agriculture Rim">
       </div>
-      <h3>CH-AG 12” Rim</h3>
-      <p>Size: W12×46 inches</p>
-
+      <h3>Display of Bolt Welding” Rim</h3>
+      <p>Size: Bolt Welding inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-    <div class="product-card" data-size="W12×46" data-type="Disc">
+    <!-- Display of Screw Hole Details -->
+    <div class="product-card" data-size="" data-type="Agriculture">
       <div class="product-img">
-        <img src="W12×46农业黄/AGRIC 2.jpg" alt="CHENHUA W12×46 inch Tractor Rim" />
+        <img src="Agriculture/Display of Screw Hole Details.jpg" alt="CHENHUA Agriculture Rim">
       </div>
-      <h3>CH-AG 12” Rim</h3>
-      <p>Size: W12×46 inches</p>
-
+      <h3>Display of Screw Hole Details” Rim</h3>
+      <p>Size: Screw Hole Details inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W12×46" data-type="Disc">
+    <!-- Display of Valve Stem Chamfer -->
+    <div class="product-card" data-size="" data-type="Agriculture">
       <div class="product-img">
-        <img src="W12×46农业黄/AGRIC 3.jpg" alt="CHENHUA W12×46 inch Tractor Rim" />
+        <img src="Agriculture/Display of Valve Stem Chamfer.jpg" alt="CHENHUA Agriculture Rim">
       </div>
-      <h3>CH-AG 12” Rim</h3>
-      <p>Size: W12×46 inches</p>
-
+      <h3>Display of Valve Stem Chamfer” Rim</h3>
+      <p>Size: Valve Stem Chamfer inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W12×46" data-type="Disc">
+    <!-- Display of Wheel Rim Knurling -->
+    <div class="product-card" data-size="" data-type="Agriculture">
       <div class="product-img">
-        <img src="W12×46农业黄/AGRIC 4.jpg" alt="CHENHUA W12×46 inch Tractor Rim" />
+        <img src="Agriculture/Display of Wheel Rim Knurling.jpg" alt="CHENHUA Agriculture Rim">
       </div>
-      <h3>CH-AG 12” Rim</h3>
-      <p>Size: W12×46 inches</p>
-
+      <h3>Display of Wheel Rim Knurling” Rim</h3>
+      <p>Size: Wheel Rim Knurling inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
-      </div>
-    </div>
-
-
-
-    <div class="product-card" data-size="W12×46" data-type="Disc">
-      <div class="product-img">
-        <img src="W12×46农业黄/AGRIC 7.jpg" alt="CHENHUA W12×46 inch Tractor Rim" />
-      </div>
-      <h3>CH-AG 12” Rim</h3>
-      <p>Size: W12×46 inches</p>
-
-      <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
-      <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
-      </div>
-    </div>
-
-
-
-    <div class="product-card" data-size="W12×46" data-type="Disc">
-      <div class="product-img">
-        <img src="W12×46农业黄/AGRIC 8.jpg" alt="CHENHUA W12×46 inch Tractor Rim" />
-      </div>
-      <h3>CH-AG 12” Rim</h3>
-      <p>Size: W12×46 inches</p>
-
-      <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
-      <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
@@ -446,114 +322,152 @@
 
 
 
-
-    <!-- 🛠️ Duplicate this block for each rim product, change data-size, name, etc. -->
-
-
-
-    <div class="product-card" data-size="W8x36" data-type="Disc">
+    <div class="product-card" data-size="DW18X38" data-type="Agriculture">
       <div class="product-img">
-        <img src="W8×36农业黄/agric  =2.jpg" alt="CHENHUA W8x36 inch Tractor Rim" />
+        <img src="Agriculture/DW18X38 Flanged.jpg" alt="CHENHUA Agriculture Rim">
       </div>
-      <h3>CH-AG 8” Rim</h3>
-      <p>Size: W8x36 inches</p>
-
+      <h3>Flanged DW18X38” Rim</h3>
+      <p>Size: DW18X38 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" cla]ss="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W8x36" data-type="Disc">
+    <div class="product-card" data-size="DW20×26" data-type="Agriculture">
       <div class="product-img">
-        <img src="W8×36农业黄/agric  =10.jpg" alt="CHENHUA W8x36 inch Tractor Rim" />
+        <img src="Agriculture/DW20×26 Welding Type.jpg" alt="CHENHUA Agriculture Rim">
       </div>
-      <h3>CH-AG 8” Rim</h3>
-      <p>Size: W8x36 inches</p>
-
+      <h3>Welding Type DW20×26” Rim</h3>
+      <p>Size: DW20×26 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W8x36" data-type="Disc">
+    <div class="product-card" data-size="W10X24" data-type="Agriculture">
       <div class="product-img">
-        <img src="W8×36农业黄/agric  =3.jpg" alt="CHENHUA W8x36 inch Tractor Rim" />
+        <img src="Agriculture/W10X24 Bolt Seat.jpg" alt="CHENHUA Agriculture Rim">
       </div>
-      <h3>CH-AG 8” Rim</h3>
-      <p>Size: W8x36 inches</p>
-
+      <h3>Bolt Seat W10X24” Rim</h3>
+      <p>Size: W10X24 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W8x36" data-type="Disc">
+    <div class="product-card" data-size="W10X28" data-type="Agriculture">
       <div class="product-img">
-        <img src="W8×36农业黄/agric  =6.jpg" alt="CHENHUA W8x36 inch Tractor Rim" />
+        <img src="Agriculture/W10X28 Bolt Seat.jpg" alt="CHENHUA Agriculture Rim">
       </div>
-      <h3>CH-AG 8” Rim</h3>
-      <p>Size: W8x36 inches</p>
-
+      <h3>Bolt Seat W10X28” Rim</h3>
+      <p>Size: W10X28 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W8x36" data-type="Disc">
+    <div class="product-card" data-size="W10x28" data-type="Agriculture">
       <div class="product-img">
-        <img src="W8×36农业黄/agric  =7.jpg" alt="CHENHUA W8x36 inch Tractor Rim" />
+        <img src="Agriculture/W10x28 Hack Yellow.jpg" alt="CHENHUA Agriculture Rim">
       </div>
-      <h3>CH-AG 8” Rim</h3>
-      <p>Size: W8x36 inches</p>
-
+      <h3>Hack Yellow W10x28” Rim</h3>
+      <p>Size: W10x28 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W8x36" data-type="Disc">
+    <div class="product-card" data-size="W12×24" data-type="Agriculture">
       <div class="product-img">
-        <img src="W8×36农业黄/agric  =8.jpg" alt="CHENHUA W8x36 inch Tractor Rim" />
+        <img src="Agriculture/W12×24 spinning yellow.jpg" alt="CHENHUA Agriculture Rim">
       </div>
-      <h3>CH-AG 8” Rim</h3>
-      <p>Size: W8x36 inches</p>
-
+      <h3>Spinning yellow W12×24” Rim</h3>
+      <p>Size: W12×24 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="W15L×28M" data-type="Agriculture">
+      <div class="product-img">
+        <img src="Agriculture/W15L×28M Flanged.jpg" alt="CHENHUA Agriculture Rim">
+      </div>
+      <h3>Flanged W15L×28M” Rim</h3>
+      <p>Size: W15L×28M inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="W15L×34" data-type="Agriculture">
+      <div class="product-img">
+        <img src="Agriculture/W15L×34 Bolt Seat.jpg" alt="CHENHUA Agriculture Rim">
+      </div>
+      <h3>Bolt Seat W15L×34” Rim</h3>
+      <p>Size: W15L×34 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="W15X38" data-type="Agriculture">
+      <div class="product-img">
+        <img src="Agriculture/W15X38 Bolt Seat.jpg" alt="CHENHUA Agriculture Rim">
+      </div>
+      <h3> Bolt Seat W15X38” Rim</h3>
+      <p>Size: W15X38 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="W15X38" data-type="Agriculture">
+      <div class="product-img">
+        <img src="Agriculture/W15X38 Flanged.jpg" alt="CHENHUA Agriculture Rim">
+      </div>
+      <h3>Flanged W15X38” Rim</h3>
+      <p>Size: W15X38 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
@@ -563,114 +477,183 @@
 
 
 
+    <!--...... Aluminum Wheels Rim ......-->
 
 
-
-    <!-- 🛠️ Duplicate this block for each rim product, change data-size, name, etc. -->
-
-
-
-    <div class="product-card" data-size="W8×48" data-type="Disc">
+    <div class="product-card" data-size="16X5.5" data-type="Aluminum">
       <div class="product-img">
-        <img src="W8×48农业黄/agric-11.jpg" alt="CHENHUA W8×48 inch Tractor Rim" />
+        <img src="Aluminum/16X5.5.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
       </div>
-      <h3>CH-AG 8×48” Rim</h3>
-      <p>Size: W8×48 inches</p>
-
+      <h3>16X5.5” Rim</h3>
+      <p>Size: 16X5.5 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-    <div class="product-card" data-size="W8×48" data-type="Disc">
+    <div class="product-card" data-size="17.5X6.00" data-type="Aluminum">
       <div class="product-img">
-        <img src="W8×48农业黄/agric-3.jpg" alt="CHENHUA W8×48 inch Tractor Rim" />
+        <img src="Aluminum/17.5X6.00 Precision Turning.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
       </div>
-      <h3>CH-AG 8×48” Rim</h3>
-      <p>Size: W8×48 inches</p>
-
+      <h3>Precision Turning 17.5X6.00” Rim</h3>
+      <p>Size: 17.5X6.00 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W8×48" data-type="Disc">
+    <div class="product-card" data-size="19.5X6.75" data-type="Aluminum">
       <div class="product-img">
-        <img src="W8×48农业黄/agric-4.jpg" alt="CHENHUA W8×48 inch Tractor Rim" />
+        <img src="Aluminum/19.5X6.75 Precision Turning.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
       </div>
-      <h3>CH-AG 8×48” Rim</h3>
-      <p>Size: W8×48 inches</p>
-
+      <h3>Precision Turning 19.5X6.75” Rim</h3>
+      <p>Size: 19.5X6.75 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-    <div class="product-card" data-size="W8×48" data-type="Disc">
+    <div class="product-card" data-size="22.55X8.25" data-type="Aluminum">
       <div class="product-img">
-        <img src="W8×48农业黄/agric-6.jpg" alt="CHENHUA W8×48 inch Tractor Rim" />
+        <img src="Aluminum/22.55X8.25 Trapezoidal Air Vent.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
       </div>
-      <h3>CH-AG 8×48” Rim</h3>
-      <p>Size: W8×48 inches</p>
-
+      <h3>Trapezoidal Air Vent 22.55X8.25” Rim</h3>
+      <p>Size: 22.55X8.25 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W8×48" data-type="Disc">
+    <div class="product-card" data-size="22.55X9.00" data-type="Aluminum">
       <div class="product-img">
-        <img src="W8×48农业黄/agric-7.jpg" alt="CHENHUA W8×48 inch Tractor Rim" />
+        <img src="Aluminum/22.55X9.00 Square Air Vent.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
       </div>
-      <h3>CH-AG 8×48” Rim</h3>
-      <p>Size: W8×48 inches</p>
-
+      <h3>Square Air Vent 22.55X9.00” Rim</h3>
+      <p>Size: 22.55X9.00 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W8×48" data-type="Disc">
+    <div class="product-card" data-size="22.5X11.75" data-type="Aluminum">
       <div class="product-img">
-        <img src="W8×48农业黄/agric-8.jpg" alt="CHENHUA W8×48 inch Tractor Rim" />
+        <img src="Aluminum/22.5X11.75 Painted Series 2.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
       </div>
-      <h3>CH-AG 8×48” Rim</h3>
-      <p>Size: W8×48 inches</p>
-
+      <h3>Painted Series 22.5X11.75” Rim</h3>
+      <p>Size: 22.5X11.75 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="22.5X11.75" data-type="Aluminum">
+      <div class="product-img">
+        <img src="Aluminum/22.5X11.75 Painted Series.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
+      </div>
+      <h3>Painted Series 22.5X11.75” Rim</h3>
+      <p>Size: 22.5X11.75 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-size="22.5X11.75" data-type="Aluminum">
+      <div class="product-img">
+        <img src="Aluminum/22.5X11.75 Polishing Series.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
+      </div>
+      <h3>Polishing Series 22.5X11.75” Rim</h3>
+      <p>Size: 22.5X11.75 inches</p>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="22.5X13.00" data-type="Aluminum">
+      <div class="product-img">
+        <img src="Aluminum/22.5X13.00 Polishing Series.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
+      </div>
+      <h3>Polishing Series 22.5X13.00” Rim</h3>
+      <p>Size: 22.5X13.00 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="22.5X13.00" data-type="Aluminum">
+      <div class="product-img">
+        <img src="Aluminum/22.5X7.50.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
+      </div>
+      <h3>22.5X13.00 ” Rim</h3>
+      <p>Size: 22.5X13.00 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="22.5X8.25" data-type="Aluminum">
+      <div class="product-img">
+        <img src="Aluminum/22.5X8.25 Polishing Series.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
+      </div>
+      <h3>Polishing Series 22.5X8.25” Rim</h3>
+      <p>Size: 22.5X8.25 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="22.5X9.00" data-type="Aluminum">
+      <div class="product-img">
+        <img src="Aluminum/22.5X9.00 Polishing Series.jpg" alt="CHENHUA Aluminum Alloy Wheels Rim">
+      </div>
+      <h3>Polishing Series 22.5X9.00” Rim</h3>
+      <p>Size: 22.5X9.00 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
@@ -681,257 +664,214 @@
 
 
 
+    <!-- ///....Tubeless Wheels Rim..../// -->
 
-
-
-
-    <!-- 🛠️ Duplicate this block for each rim product, change data-size, name, etc. -->
-
-
-
-
-    <div class="product-card" data-size="W9×18" data-type="Disc">
+    <div class="product-card" data-size="22.5X8.25" data-type="Tubeless">
       <div class="product-img">
-        <img src="W9×18农业黄/agric 10.jpg" alt="CHENHUA W9×18 inch Tractor Rim" />
+        <img src="Tubeless/22.5X8.25 White Powder Spraying.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG 9×18” Rim</h3>
-      <p>Size: W9×18 inches</p>
-
+      <h3>White Powder Spraying 22.5X8.25” Rim</h3>
+      <p>Size: 22.5X8.25 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W9×18" data-type="Disc">
+    <div class="product-card" data-size="22.5X8.25" data-type="Tubeless">
       <div class="product-img">
-        <img src="W9×18农业黄/agric 2.jpg" alt="CHENHUA W9×18 inch Tractor Rim" />
+        <img src="Tubeless/22.5X8.25.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG 9×18” Rim</h3>
-      <p>Size: W9×18 inches</p>
-
+      <h3>22.5X8.25” Rim</h3>
+      <p>Size: 22.5X8.25 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W9×18" data-type="Disc">
+    <div class="product-card" data-size="22.5X9.00+22.5×9.75" data-type="Tubeless">
       <div class="product-img">
-        <img src="W9×18农业黄/agric 3.jpg " alt="CHENHUA W9×18 inch Tractor Rim" />
+        <img src="Tubeless/22.5X9.00+22.5×9.75.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG 9×18” Rim</h3>
-      <p>Size: W9×18 inches</p>
-
+      <h3>22.5X9.00+22.5×9.75” Rim</h3>
+      <p>Size: 22.5X9.00+22.5×9.75 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W9×18" data-type="Disc">
+    <div class="product-card" data-size="22.5X9.00" data-type="Tubeless">
       <div class="product-img">
-        <img src="W9×18农业黄/agric 4.jpg " alt="CHENHUA W9×18 inch Tractor Rim" />
+        <img src="Tubeless/22.5X9.00.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG 9×18” Rim</h3>
-      <p>Size: W9×18 inches</p>
-
+      <h3>22.5X9.00” Rim</h3>
+      <p>Size: 22.5X9.00 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W9×18" data-type="Disc">
+    <div class="product-card" data-size="22.5×7.5GB" data-type="Tubeless">
       <div class="product-img">
-        <img src="W9×18农业黄/agric 6.jpg " alt="CHENHUA W9×18 inch Tractor Rim" />
+        <img src="Tubeless/22.5×7.5GB.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG 9×18” Rim</h3>
-      <p>Size: W9×18 inches</p>
-
+      <h3>22.5×7.5GB” Rim</h3>
+      <p>Size: 22.5×7.5GB inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W9×18" data-type="Disc">
+    <div class="product-card" data-size="22.5×8.25" data-type="Tubeless">
       <div class="product-img">
-        <img src="W9×18农业黄/agric 7.jpg " alt="CHENHUA W9×18 inch Tractor Rim" />
+        <img src="Tubeless/22.5×8.25.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG 9×18” Rim</h3>
-      <p>Size: W9×18 inches</p>
-
+      <h3>22.5×8.25” Rim</h3>
+      <p>Size: 22.5×8.25 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="W9×18" data-type="Disc">
+    <div class="product-card" data-size="22.5×9.75" data-type="Tubeless">
       <div class="product-img">
-        <img src="W9×18农业黄/agric 8.jpg " alt="CHENHUA W9×18 inch Tractor Rim" />
+        <img src="Tubeless/22.5×9.75White.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG 9×18” Rim</h3>
-      <p>Size: W9×18 inches</p>
-
+      <h3>White 22.5×9.75” Rim</h3>
+      <p>Size: 22.5×9.75 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-    <!-- 🛠️ Duplicate this block for each rim product, change data-size, name, etc. -->
-
-
-
-    <div class="product-card" data-size="C9×18" data-type="Disc">
+    <div class="product-card" data-size="24.5×8.25" data-type="Tubeless">
       <div class="product-img">
-        <img src="C9×18哈克黄/agric  B.jpg" alt="CHENHUA C9×18 inch Tractor Rim" />
+        <img src="Tubeless/24.5×8.25.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG C9×18” Rim</h3>
-      <p>Size: C9×18 inches</p>
-
+      <h3>24.5×8.25” Rim</h3>
+      <p>Size: 24.5×8.25 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="C9×18" data-type="Disc">
+    <div class="product-card" data-size="5.5JK×14" data-type="Tubeless">
       <div class="product-img">
-        <img src="C9×18哈克黄/agric  D.jpg" alt="CHENHUA C9×18 inch Tractor Rim" />
+        <img src="Tubeless/5.5JK×14.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG C9×18” Rim</h3>
-      <p>Size: C9×18 inches</p>
-
+      <h3>5.5JK×14” Rim</h3>
+      <p>Size: 5.5JK×14 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="C9×18" data-type="Disc">
+    <div class="product-card" data-size="5.5K×16" data-type="Tubeless">
       <div class="product-img">
-        <img src="C9×18哈克黄/agric  E.jpg" alt="CHENHUA C9×18 inch Tractor Rim" />
+        <img src="Tubeless/5.5K×16.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG C9×18” Rim</h3>
-      <p>Size: C9×18 inches</p>
-
+      <h3>5.5K×16” Rim</h3>
+      <p>Size: 5.5K×16 inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="C9×18" data-type="Disc">
+    <div class="product-card" data-size="7J×16NB" data-type="Tubeless">
       <div class="product-img">
-        <img src="C9×18哈克黄/agric  F.jpg" alt="CHENHUA C9×18 inch Tractor Rim" />
+        <img src="Tubeless/7J×16NB.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG C9×18” Rim</h3>
-      <p>Size: C9×18 inches</p>
-
+      <h3>7J×16NB” Rim</h3>
+      <p>Size: 7J×16NB inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="C9×18" data-type="Disc">
+    <div class="product-card" data-size="" data-type="Tubeless">
       <div class="product-img">
-        <img src="C9×18哈克黄/agric  G.jpg" alt="CHENHUA C9×18 inch Tractor Rim" />
+        <img src="Tubeless/Lightweight Products.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG C9×18” Rim</h3>
-      <p>Size: C9×18 inches</p>
-
+      <h3>Display of Lightweight” Rim</h3>
+      <p>Size: Lightweight inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
 
-
-    <div class="product-card" data-size="C9×18" data-type="Disc">
+    <div class="product-card" data-size="" data-type="Tubeless">
       <div class="product-img">
-        <img src="C9×18哈克黄/agric  H.jpg" alt="CHENHUA C9×18 inch Tractor Rim" />
+        <img src="Tubeless/Support Ring 2.jpg" alt="CHENHUA Tubeless Wheels Rim">
       </div>
-      <h3>CH-AG C9×18” Rim</h3>
-      <p>Size: C9×18 inches</p>
-
+      <h3>Display Support Ring ” Rim</h3>
+      <p>Size: Support Ring inches</p>
       <label>Quantity:</label>
-      <input type="number" min="1" value="1" class="qty-input" />
-
+      <input type="number" min="1" value="1" class="qty-input">
       <div class="contact-buttons">
-        <button onclick="sendWhatsApp(this)" data-i18n="whatsapp">WhatsApp</button>
-        <button onclick="sendEmail(this)" data-i18n="contact_email">Email</button>
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="" data-type="Tubeless">
+      <div class="product-img">
+        <img src="Tubeless/Support Ring.jpg" alt="CHENHUA Tubeless Wheels Rim">
+      </div>
+      <h3>Support Ring” Rim</h3>
+      <p>Size: Support Ring inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
       </div>
     </div>
 
@@ -942,12 +882,135 @@
 
 
 
-    <!-- 🛠️ Duplicate this block for each rim product, change data-size, name, etc. -->
+    <!-- ///....Engineering Machinery Wheels..../// -->
+
+    <div class="product-card" data-size="14.5×7.00" data-type="Engineering">
+      <div class="product-img">
+        <img src="Engineering/14.5×7.00.jpg" alt="CHENHUA Engineering Machinery Wheels Rim">
+      </div>
+      <h3>14.5×7.00” Rim</h3>
+      <p>Size: 14.5×7.00 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="16.5×9.75" data-type="Engineering">
+      <div class="product-img">
+        <img src="Engineering/16.5×9.75.jpg" alt="CHENHUA Engineering Machinery Wheels Rim">
+      </div>
+      <h3>16.5×9.75” Rim</h3>
+      <p>Size: 16.5×9.75 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="22.5×16" data-type="Engineering">
+      <div class="product-img">
+        <img src="Engineering/22.5×16.jpg" alt="CHENHUA Engineering Machinery Wheels Rim">
+      </div>
+      <h3>22.5×16” Rim</h3>
+      <p>Size: 22.5×16 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="4.00E-9" data-type="Engineering">
+      <div class="product-img">
+        <img src="Engineering/4.00E-9.jpg" alt="CHENHUA Engineering Machinery Wheels Rim">
+      </div>
+      <h3>4.00E-9” Rim</h3>
+      <p>Size: 4.00E-9 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="7.00-20" data-type="Engineering">
+      <div class="product-img">
+        <img src="Engineering/7.00-20.jpg" alt="CHENHUA Engineering Machinery Wheels Rim">
+      </div>
+      <h3>7.00-20” Rim</h3>
+      <p>Size: 7.00-20 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="8.00V-20" data-type="Engineering">
+      <div class="product-img">
+        <img src="Engineering/8.00V-20.jpg" alt="CHENHUA Engineering Machinery Wheels Rim">
+      </div>
+      <h3>8.00V-20” Rim</h3>
+      <p>Size: 8.00V-20 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
+
+    <div class="product-card" data-size="9.75-15" data-type="Engineering">
+      <div class="product-img">
+        <img src="Engineering/9.75-15.jpg" alt="CHENHUA Engineering Machinery Wheels Rim">
+      </div>
+      <h3>9.75-15” Rim</h3>
+      <p>Size: 9.75-15 inches</p>
+      <label>Quantity:</label>
+      <input type="number" min="1" value="1" class="qty-input">
+      <div class="contact-buttons">
+        <button onclick="sendWhatsApp(this)">WhatsApp</button>
+        <button onclick="sendEmail(this)">Email</button>
+      </div>
+    </div>
+
 
 
   </section>
 
+  <script>
+    const filterSize = document.getElementById("filter-size");
+    const filterType = document.getElementById("filter-type");
+    const products = document.querySelectorAll(".product-card");
 
+    function filterProducts() {
+      const size = filterSize.value;
+      const type = filterType.value;
+
+      products.forEach(card => {
+        const matchSize = size === "" || card.dataset.size === size;
+        const matchType = type === "" || card.dataset.type === type;
+
+        card.style.display = matchSize && matchType ? "block" : "none";
+        card.classList.add("fade-in");
+        setTimeout(() => card.classList.remove("fade-in"), 500);
+      });
+    }
+  </script>
 
 
 
