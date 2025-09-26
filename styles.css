@@ -719,153 +719,81 @@ body.dark-mode .foote {
 
 
 
-/* Products Preview Section */
-.products-preview {
+/* Workshop Section */
+/* Workshop Section */
+.workshop-scene {
+  background: none;
+  padding: 60px 20px;
   text-align: center;
-  padding: 80px 20px;
-  background: #f8f9fa;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
 }
 
 .section-title {
-  font-size: 2.2rem;
-  margin-bottom: 30px;
-  font-weight: 700;
-  color: #222;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ff6600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-/* Slider container */
-.slider-container {
-  position: relative;
-  overflow: hidden;
-  max-width: 1200px;
+/* Slider Container */
+.workshop-slider {
+  max-width: 1300px;
   margin: auto;
+  overflow: hidden;
+  position: relative;
 }
 
-/* Slides wrapper */
-.slides {
+/* Track Animation */
+.slider-track {
   display: flex;
-  transition: transform 0.6s ease-in-out;
+  width: calc(300px * 20); /* 10 images * duplicate */
+  animation: scroll 30s linear infinite;
+}
+
+/* Each Slide */
+.slide {
+  min-width: 300px;
+  margin: 0 15px;
+  transition: transform 0.4s ease;
+}
+
+.slide img {
   width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
 }
 
-/* Product card */
-.product-card {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 20px;
+.slide:hover {
+  transform: scale(1.08);
 }
 
-.product-card img {
-  width: 100%;
-  max-height: 250px;
-  object-fit: contain;
-  /* show full image */
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+/* Animation Keyframes */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-.product-card h3 {
-  margin: 15px 0;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 8px;
-  background: #ff6600;
-  color: #fff;
-  font-size: 0.95rem;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #e05500;
-}
-
-/* Arrows */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.6);
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: background 0.3s ease;
-  z-index: 10;
-}
-
-.arrow:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.arrow.prev {
-  left: 15px;
-}
-
-.arrow.next {
-  right: 15px;
-}
-
-/* Dots */
-.dots {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-.dots button {
-  width: 12px;
-  height: 12px;
-  background: #bbb;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.dots button.active {
-  background: #ff6600;
-}
-
-/* See all button */
-.see-all {
-  margin-top: 25px;
-}
-
-.see-all-btn {
-  background: #222;
-}
-
-.see-all-btn:hover {
-  background: #000;
-}
-
-/* Responsive Design */
-@media (min-width: 768px) {
-  .product-card {
-    min-width: 50%;
-    /* 2 items per view on tablets */
+/* Responsive */
+@media (max-width: 768px) {
+  .slide {
+    min-width: 220px;
   }
 }
 
-@media (min-width: 1024px) {
-  .product-card {
-    min-width: 25%;
-    /* 4 items per view on desktop */
+@media (max-width: 480px) {
+  .slide {
+    min-width: 180px;
   }
 }
 
 
-/* feature product end  */
+
+/* Workshop Section end */
+
+
 
 
 

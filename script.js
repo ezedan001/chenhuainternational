@@ -202,6 +202,30 @@ modal.addEventListener('click', (e) => {
 
 
 
+
+
+/* Workshop Section */
+
+const track = document.querySelector('.slider-track');
+const slides = Array.from(track.children);
+
+// Duplicate all slides for infinite effect
+slides.forEach(slide => {
+  const clone = slide.cloneNode(true);
+  track.appendChild(clone);
+});
+
+/* Workshop Section end */
+
+
+
+
+
+
+
+
+
+
 //....Our Workshop...//
 function openLightbox(img) {
   document.getElementById("lightbox").style.display = "block";
