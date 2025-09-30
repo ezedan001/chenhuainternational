@@ -180,60 +180,145 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 
 
+
+
+
+/* ---------- Honor & Qualification Section end ---------- */
+
+
+// Select elements
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBt = document.querySelector(".lightbox .close");
+
+// All honor images
+const honorImages = document.querySelectorAll(".honor-card img");
+
+// When an image is clicked → open popup
+honorImages.forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.style.display = "block";
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+  });
+});
+
+// Close popup when clicking "X"
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+// Close popup when clicking outside image
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
+
+
+
+
+/* ---------- Honor & Qualification Section end ---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+// <!-- /*....... Section testimonials  .....*/ -->
+
+
+// Fade-in on scroll
+const testimonials = document.querySelectorAll('.testimonial-item');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+testimonials.forEach(testimonial => {
+  observer.observe(testimonial);
+});
+
+
+// <!-- /*....... Section testimonials  .....*/ -->//
+
+
+
+
+
+
+
+
+
+
+
+
+
 const slider = document.getElementById("certSlider");
-    const pagination = document.getElementById("certPagination");
-    const itemsPerPage = 4;
-    let currentPage = 0;
-    let autoplayInterval;
+const pagination = document.getElementById("certPagination");
+const itemsPerPage = 4;
+let currentPage = 0;
+let autoplayInterval;
 
-    const certItems = Array.from(slider.children);
-    const totalPages = Math.ceil(certItems.length / itemsPerPage);
+const certItems = Array.from(slider.children);
+const totalPages = Math.ceil(certItems.length / itemsPerPage);
 
-    function renderPage(page) {
-      slider.innerHTML = "";
-      const start = page * itemsPerPage;
-      const end = start + itemsPerPage;
-      certItems.slice(start, end).forEach(item => {
-        slider.appendChild(item);
-      });
+function renderPage(page) {
+  slider.innerHTML = "";
+  const start = page * itemsPerPage;
+  const end = start + itemsPerPage;
+  certItems.slice(start, end).forEach(item => {
+    slider.appendChild(item);
+  });
 
-      // Update pagination dots
-      const dots = pagination.querySelectorAll('.cert-dot');
-      dots.forEach((dot, index) => {
-        dot.classList.toggle("active", index === page);
-      });
-    }
+  // Update pagination dots
+  const dots = pagination.querySelectorAll('.cert-dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle("active", index === page);
+  });
+}
 
-    function createDots() {
-      for (let i = 0; i < totalPages; i++) {
-        const dot = document.createElement("span");
-        dot.classList.add("cert-dot");
-        if (i === 0) dot.classList.add("active");
-        dot.addEventListener("click", () => {
-          currentPage = i;
-          renderPage(currentPage);
-          restartAutoplay();
-        });
-        pagination.appendChild(dot);
-      }
-    }
+function createDots() {
+  for (let i = 0; i < totalPages; i++) {
+    const dot = document.createElement("span");
+    dot.classList.add("cert-dot");
+    if (i === 0) dot.classList.add("active");
+    dot.addEventListener("click", () => {
+      currentPage = i;
+      renderPage(currentPage);
+      restartAutoplay();
+    });
+    pagination.appendChild(dot);
+  }
+}
 
-    function startAutoplay() {
-      autoplayInterval = setInterval(() => {
-        currentPage = (currentPage + 1) % totalPages;
-        renderPage(currentPage);
-      }, 4000); // 4 seconds delay
-    }
-
-    function restartAutoplay() {
-      clearInterval(autoplayInterval);
-      startAutoplay();
-    }
-
-    // Initialize
-    createDots();
+function startAutoplay() {
+  autoplayInterval = setInterval(() => {
+    currentPage = (currentPage + 1) % totalPages;
     renderPage(currentPage);
-    startAutoplay();
+  }, 4000); // 4 seconds delay
+}
+
+function restartAutoplay() {
+  clearInterval(autoplayInterval);
+  startAutoplay();
+}
+
+// Initialize
+createDots();
+renderPage(currentPage);
+startAutoplay();
 
 
 

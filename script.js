@@ -192,8 +192,8 @@ modal.addEventListener('click', (e) => {
 
 
 //....footer..../
-  // Automatically update current year
-  document.getElementById("year").textContent = new Date().getFullYear();
+// Automatically update current year
+document.getElementById("year").textContent = new Date().getFullYear();
 
 // Automatically update current year///
 
@@ -237,6 +237,81 @@ function closeLightbox() {
   document.getElementById("lightbox").style.display = "none";
 }
 //....Our Workshop end...//
+
+
+
+
+
+
+
+
+
+/*....... Our Honors & Qualifications  .....*/
+
+
+// Select elements
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBt = document.querySelector(".lightbox .close");
+
+// All honor images
+const honorImages = document.querySelectorAll(".honor-card img");
+
+// When an image is clicked → open popup
+honorImages.forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.style.display = "block";
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+  });
+});
+
+// Close popup when clicking "X"
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+// Close popup when clicking outside image
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
+
+
+
+/*....... SOur Honors & Qualifications  .....*/
+
+
+
+
+
+
+
+// <!-- /*....... Section testimonials  .....*/ -->
+
+
+// Fade-in on scroll
+const testimonials = document.querySelectorAll('.testimonial-item');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+testimonials.forEach(testimonial => {
+  observer.observe(testimonial);
+});
+
+
+// <!-- /*....... Section testimonials  .....*/ -->//
+
+
+
 
 
 

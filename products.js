@@ -276,6 +276,41 @@ function filterProducts() {
 
 
 
+// <!-- /*....... Section testimonials  .....*/ -->
+
+
+// Fade-in on scroll
+const testimonials = document.querySelectorAll('.testimonial-item');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+testimonials.forEach(testimonial => {
+  observer.observe(testimonial);
+});
+
+
+// <!-- /*....... Section testimonials  .....*/ -->//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
