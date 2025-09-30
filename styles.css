@@ -597,7 +597,7 @@ body.dark-mode .foote {
 /* About Section */
 .about {
   padding: 80px 20px;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
   /* position: relative; */
   position: sticky;
 }
@@ -749,7 +749,8 @@ body.dark-mode .foote {
 /* Track Animation */
 .slider-track {
   display: flex;
-  width: calc(300px * 20); /* 10 images * duplicate */
+  width: calc(300px * 20);
+  /* 10 images * duplicate */
   animation: scroll 30s linear infinite;
 }
 
@@ -763,7 +764,7 @@ body.dark-mode .foote {
 .slide img {
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
 .slide:hover {
@@ -772,8 +773,13 @@ body.dark-mode .foote {
 
 /* Animation Keyframes */
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Responsive */
@@ -803,7 +809,7 @@ body.dark-mode .foote {
 /* ---------- Workshop Section ---------- */
 .workshop-section {
   padding: 10px 5%;
-  background: #fef7f7;
+  /* background: #fef7f7; */
   /* Dark industrial look */
   color: #fff;
   text-align: center;
@@ -949,50 +955,6 @@ body.dark-mode .foote {
     flex-direction: column;
     gap: 30px;
   }
-
-  /* Reuse your workshop-section CSS from homepage and just add Lightbox */
-  .lightbox {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    padding-top: 80px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background: rgba(0, 0, 0, 0.9);
-  }
-
-  .lightbox-content {
-    display: block;
-    margin: auto;
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 10px;
-  }
-
-  #caption {
-    margin: 15px auto;
-    text-align: center;
-    color: #ff6600;
-    font-size: 1.2rem;
-  }
-
-  .lightbox .close {
-    position: absolute;
-    top: 30px;
-    right: 50px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .lightbox .close:hover {
-    color: #ff6600;
-  }
 }
 
 /* workshop-section scene end  */
@@ -1004,13 +966,12 @@ body.dark-mode .foote {
 
 
 
-
 /* ===== Workshop Videos Section ===== */
 .workshop-videos {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  /* background: linear-gradient(135deg, #0f0f0f, #1a1a1a); */
   text-align: center;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .workshop-videos .section-title {
@@ -1142,7 +1103,49 @@ body.dark-mode .foote {
   }
 }
 
+/* Reuse your workshop-section CSS from homepage and just add Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.9);
+}
 
+.lightbox-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+#caption {
+  margin: 15px auto;
+  text-align: center;
+  color: #ff6600;
+  font-size: 1.2rem;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lightbox .close:hover {
+  color: #ff6600;
+}
 
 /* 🔹 Workshop Videos Section end */
 
@@ -1156,9 +1159,9 @@ body.dark-mode .foote {
 /* ---------- Honor & Qualification Section ---------- */
 .honor-section {
   padding: 80px 5%;
-  background: #fef7f7;
+  /* background: #fef7f7; */
   /* Dark professional background */
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
   font-family: 'Arial', sans-serif;
 }
@@ -1470,6 +1473,7 @@ body.dark-mode .foote {
   .testimonials {
     padding: 80px 35px;
   }
+
   .testimonial-text {
     font-size: 0.95rem;
   }
@@ -1480,15 +1484,17 @@ body.dark-mode .foote {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .testimonial-img {
     margin-bottom: 12px;
   }
+
   .testimonial-text {
     padding-left: 0;
   }
 
 
-  
+
 }
 
 
