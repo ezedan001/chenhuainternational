@@ -621,9 +621,10 @@ body.dark-mode .foote {
 /* About Section */
 .about {
   padding: 100px 20px;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
   position: sticky;
 }
+
 
 .about .container {
   display: flex;
