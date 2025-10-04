@@ -173,67 +173,75 @@ const translations = {
         products: "Products",
         about: "About",
         contact: "Contact",
-        privacy_title: "Privacy Policy",
-        privacy_text: "This Privacy Policy outlines how CHENHUA AUTO collects, uses, and protects your information.",
+        // Privacy Intro
+        privac_title: "Privacy Policy",
+        privacy_text: "This Privacy Policy outlines how CHENHUA INTERNATIONAL collects, uses, and protects your information.",
 
-        privacy_title: "Privacy Policy",
-        privacy_intro: "This Privacy Policy outlines how <strong>CHENHUA AUTO</strong> collects, uses, and protects your information.",
-
+        // Information We Collect
         info_title: "Information We Collect",
-        info_intro: "CHENHUA AUTO may collect the following types of information:",
+        info_intro: "CHENHUA INTERNATIONAL may collect the following types of information:",
         info_personal: "Personal Data: Name, email address, phone number, and other contact details.",
         info_technical: "Technical Data: IP address, browser type, operating system, device information, and access times.",
         info_behavioral: "Behavioral Data: Pages visited, links clicked, time spent on site, and user preferences.",
 
+        // How We Use Your Information
         usage_title: "How We Use Your Information",
-        usage_intro: "CHENHUA AUTO uses the collected information for the following purposes:",
+        usage_intro: "CHENHUA INTERNATIONAL uses the collected information for the following purposes:",
         usage_inquiries: "To process inquiries: We use your personal information to respond to your messages, product requests, or customer support needs.",
         usage_experience: "To improve user experience: Technical and behavioral data help us optimize our website and tailor our services to user preferences.",
         usage_marketing: "For marketing (if applicable): With your consent, we may send you updates, offers, or promotional content.",
         usage_legal: "To comply with legal obligations: We may use your information to fulfill regulatory, tax, or legal requirements.",
 
+        // Sharing Your Information
         sharing_title: "Sharing Your Information",
-        sharing_intro: "CHENHUA AUTO values your privacy and transparency. We want you to understand how your information is shared:",
+        sharing_intro: "CHENHUA INTERNATIONAL values your privacy and transparency. We want you to understand how your information is shared:",
         sharing_nosell: "No Selling of Data: We do not sell, trade, or rent your personal data to third parties.",
         sharing_services: "Third-Party Services: We may share data with trusted partners who help us operate the website and services, such as:",
         sharing_google: "Google Analytics – to analyze website traffic and usage patterns",
         sharing_payment: "Payment processors – to securely handle transactions",
         sharing_email: "Email service providers – to send communication you opted into",
 
+        // Data Security
         security_title: "Data Security",
-        security_intro: "CHENHUA AUTO is committed to protecting your information and has implemented strong security measures to safeguard it:",
+        security_intro: "CHENHUA INTERNATIONAL is committed to protecting your information and has implemented strong security measures to safeguard it:",
         security_ssl: "SSL Encryption: All data transmitted between your browser and our servers is encrypted using industry-standard SSL (Secure Socket Layer) technology.",
         security_firewall: "Firewalls and Access Control: We use advanced firewalls and restricted access protocols to keep your data secure.",
         security_storage: "Secure Storage: Your personal data is stored in secure environments and only accessible to authorized personnel.",
         security_breach: "Breach Prevention: Regular security audits, software updates, and monitoring are conducted to prevent unauthorized access or data breaches.",
 
+        // Your Rights
         rights_title: "Your Rights",
-        rights_intro: "As a user of CHENHUA AUTO’s services, you have the following rights regarding your personal data:",
+        rights_intro: "As a user of CHENHUA INTERNATIONAL services, you have the following rights regarding your personal data:",
         rights_access: "Right to Access: You can request a copy of the personal information we hold about you at any time.",
         rights_correct: "Right to Correction: If you believe any information we have is inaccurate or incomplete, you have the right to request a correction.",
         rights_delete: "Right to Deletion: You may request that we delete your personal data from our systems, subject to legal and operational obligations.",
-        rights_contact: "To make a data request, please contact us at sales@chenhuaauto.com.",
+        rights_contact: "To make a data request, please contact us at",
+        rights_contact_email: "sales@chenhuaauto.com",
 
+        // Cookies
         cookies_title: "Cookies",
         cookies_intro1: "Our website may use cookies to enhance your browsing experience and analyze site traffic. Cookies are small data files stored on your device that help us understand how you use our site.",
         cookies_intro2: "You have the option to disable cookies through your browser settings. However, please note that some features of the website may not function properly without cookies enabled.",
         cookies_intro3: "By continuing to use our site, you consent to our use of cookies in accordance with this Privacy Policy.",
 
+        // Policy Updates
         updates_title: "Policy Updates",
         updates_intro: "We may update this Privacy Policy occasionally to reflect changes in our practices or legal requirements. Any changes will be posted on this page, and the revised policy will apply from the date of publication.",
 
+        // Contact Information
         contact_title: "Contact Information",
         contact_intro: "If you have any questions or concerns about this Privacy Policy, feel free to contact us:",
         contact_email: "📧 Email: Generating link...",
         contact_phone: "📞 Phone: +86 18054365167",
-        contact_page: "🔗 Visit our Contact Page",
+        page: "Visit our Contact Page",
 
+        // Footer
         quick_links: "Quick Links",
-        about_us: "About Us",
-        contact: "Contact",
         follow_us: "Follow Us",
         privacy_policy: "Privacy Policy",
         terms_of_service: "Terms of Service",
+        contact: "Contact",
+        about_us: "About Us",
         contact_us: "Contact CHENHUA AUTO",
         full_name: "Full Name",
         company_name: "Company Name",
@@ -245,228 +253,258 @@ const translations = {
     },
 
     fr: {
+        // Header & Navigation
         home: "Accueil",
         products: "Produits",
         about: "À propos",
         contact: "Contact",
-        privacy_title: "Politique de Confidentialité",
-        privacy_text: "Cette politique de confidentialité décrit comment CHENHUA AUTO collecte, utilise et protège vos informations.",
 
-        privacy_title: "Politique de Confidentialité",
-        privacy_intro: "Cette politique de confidentialité décrit comment <strong>CHENHUA AUTO</strong> collecte, utilise et protège vos informations.",
+        // Privacy Intro
+        privac_title: "Politique de confidentialité",
+        privacy_text: "Cette politique de confidentialité décrit comment CHENHUA INTERNATIONAL collecte, utilise et protège vos informations.",
 
+        // Information We Collect
         info_title: "Informations que nous collectons",
-        info_intro: "CHENHUA AUTO peut collecter les types d’informations suivants :",
+        info_intro: "CHENHUA INTERNATIONAL peut collecter les types d'informations suivants :",
         info_personal: "Données personnelles : nom, adresse e-mail, numéro de téléphone et autres coordonnées.",
-        info_technical: "Données techniques : adresse IP, type de navigateur, système d’exploitation, informations sur l’appareil et heures d’accès.",
-        info_behavioral: "Données comportementales : pages visitées, liens cliqués, temps passé sur le site et préférences de l'utilisateur.",
+        info_technical: "Données techniques : adresse IP, type de navigateur, système d'exploitation, informations sur l'appareil et heures d'accès.",
+        info_behavioral: "Données comportementales : pages visitées, liens cliqués, temps passé sur le site et préférences utilisateur.",
 
+        // How We Use Your Information
         usage_title: "Comment nous utilisons vos informations",
-        usage_intro: "CHENHUA AUTO utilise les informations collectées aux fins suivantes :",
-        usage_inquiries: "Pour traiter les demandes : nous utilisons vos informations personnelles pour répondre à vos messages, demandes de produits ou besoins de support client.",
-        usage_experience: "Pour améliorer l'expérience utilisateur : les données techniques et comportementales nous aident à optimiser notre site web et à adapter nos services aux préférences des utilisateurs.",
-        usage_marketing: "À des fins marketing (le cas échéant) : avec votre consentement, nous pouvons vous envoyer des mises à jour, des offres ou du contenu promotionnel.",
-        usage_legal: "Pour respecter les obligations légales : nous pouvons utiliser vos informations pour répondre à des exigences réglementaires, fiscales ou légales.",
+        usage_intro: "CHENHUA INTERNATIONAL utilise les informations collectées aux fins suivantes :",
+        usage_inquiries: "Pour traiter les demandes : nous utilisons vos informations personnelles pour répondre à vos messages, demandes de produits ou besoins d'assistance client.",
+        usage_experience: "Pour améliorer l'expérience utilisateur : les données techniques et comportementales nous aident à optimiser notre site et à adapter nos services aux préférences des utilisateurs.",
+        usage_marketing: "Pour le marketing (si applicable) : avec votre consentement, nous pouvons vous envoyer des mises à jour, offres ou contenus promotionnels.",
+        usage_legal: "Pour se conformer aux obligations légales : nous pouvons utiliser vos informations pour répondre aux exigences réglementaires, fiscales ou légales.",
 
+        // Sharing Your Information
         sharing_title: "Partage de vos informations",
-        sharing_intro: "CHENHUA AUTO respecte votre vie privée et la transparence. Nous voulons que vous compreniez comment vos informations sont partagées :",
-        sharing_nosell: "Aucune vente de données : nous ne vendons, n’échangeons ni ne louons vos données personnelles à des tiers.",
-        sharing_services: "Services tiers : nous pouvons partager des données avec des partenaires de confiance qui nous aident à exploiter le site web et les services, tels que :",
-        sharing_google: "Google Analytics – pour analyser le trafic du site et les habitudes d'utilisation",
-        sharing_payment: "Prestataires de paiement – pour gérer les transactions de manière sécurisée",
-        sharing_email: "Fournisseurs de services e-mail – pour envoyer les communications auxquelles vous avez souscrit",
+        sharing_intro: "CHENHUA INTERNATIONAL valorise votre confidentialité et la transparence. Nous voulons que vous compreniez comment vos informations sont partagées :",
+        sharing_nosell: "Pas de vente de données : nous ne vendons, n'échangeons ni ne louons vos données personnelles à des tiers.",
+        sharing_services: "Services tiers : nous pouvons partager des données avec des partenaires de confiance qui nous aident à exploiter le site et les services, tels que :",
+        sharing_google: "Google Analytics – pour analyser le trafic et l'utilisation du site",
+        sharing_payment: "Processeurs de paiement – pour gérer les transactions en toute sécurité",
+        sharing_email: "Fournisseurs de services e-mail – pour envoyer les communications auxquelles vous vous êtes inscrit",
 
+        // Data Security
         security_title: "Sécurité des données",
-        security_intro: "CHENHUA AUTO s'engage à protéger vos informations et a mis en place des mesures de sécurité solides :",
-        security_ssl: "Chiffrement SSL : toutes les données transmises entre votre navigateur et nos serveurs sont cryptées selon les normes SSL (Secure Socket Layer).",
-        security_firewall: "Pare-feux et contrôle d'accès : nous utilisons des pare-feux avancés et des protocoles d’accès restreint pour garantir la sécurité de vos données.",
-        security_storage: "Stockage sécurisé : vos données personnelles sont stockées dans des environnements sécurisés et uniquement accessibles au personnel autorisé.",
-        security_breach: "Prévention des violations : des audits de sécurité réguliers, des mises à jour logicielles et une surveillance sont réalisés pour empêcher tout accès non autorisé ou violation de données.",
+        security_intro: "CHENHUA INTERNATIONAL s'engage à protéger vos informations et a mis en place des mesures de sécurité strictes :",
+        security_ssl: "Chiffrement SSL : toutes les données transmises entre votre navigateur et nos serveurs sont cryptées selon la norme SSL (Secure Socket Layer).",
+        security_firewall: "Pare-feux et contrôle d'accès : nous utilisons des pare-feux avancés et des protocoles d'accès restreints pour sécuriser vos données.",
+        security_storage: "Stockage sécurisé : vos données personnelles sont conservées dans des environnements sécurisés et accessibles uniquement au personnel autorisé.",
+        security_breach: "Prévention des violations : des audits réguliers, mises à jour logicielles et surveillances sont effectués pour éviter tout accès non autorisé ou violation de données.",
 
+        // Your Rights
         rights_title: "Vos droits",
-        rights_intro: "En tant qu'utilisateur des services de CHENHUA AUTO, vous disposez des droits suivants concernant vos données personnelles :",
-        rights_access: "Droit d'accès : vous pouvez demander une copie des informations personnelles que nous détenons à votre sujet à tout moment.",
-        rights_correct: "Droit de rectification : si vous pensez que des informations sont incorrectes ou incomplètes, vous pouvez demander une correction.",
-        rights_delete: "Droit de suppression : vous pouvez demander la suppression de vos données personnelles, sous réserve des obligations légales et opérationnelles.",
-        rights_contact: "Pour faire une demande concernant vos données, veuillez nous contacter à l'adresse : sales@chenhuaauto.com.",
+        rights_intro: "En tant qu'utilisateur des services de CHENHUA INTERNATIONAL, vous disposez des droits suivants concernant vos données personnelles :",
+        rights_access: "Droit d'accès : vous pouvez demander à tout moment une copie des informations personnelles que nous détenons à votre sujet.",
+        rights_correct: "Droit de correction : si vous pensez que les informations que nous avons sont inexactes ou incomplètes, vous avez le droit de demander une correction.",
+        rights_delete: "Droit de suppression : vous pouvez demander la suppression de vos données personnelles de nos systèmes, sous réserve des obligations légales et opérationnelles.",
+        rights_contact: "Pour faire une demande concernant vos données, veuillez nous contacter à",
+        rights_contact_email: "sales@chenhuaauto.com",
 
+        // Cookies
         cookies_title: "Cookies",
-        cookies_intro1: "Notre site web peut utiliser des cookies pour améliorer votre expérience de navigation et analyser le trafic du site. Les cookies sont de petits fichiers stockés sur votre appareil qui nous aident à comprendre comment vous utilisez notre site.",
-        cookies_intro2: "Vous avez la possibilité de désactiver les cookies via les paramètres de votre navigateur. Veuillez noter que certaines fonctionnalités du site peuvent ne pas fonctionner correctement sans cookies.",
-        cookies_intro3: "En continuant à utiliser notre site, vous consentez à l'utilisation de cookies conformément à cette politique de confidentialité.",
+        cookies_intro1: "Notre site peut utiliser des cookies pour améliorer votre expérience de navigation et analyser le trafic. Les cookies sont de petits fichiers de données stockés sur votre appareil pour nous aider à comprendre comment vous utilisez notre site.",
+        cookies_intro2: "Vous pouvez désactiver les cookies dans les paramètres de votre navigateur. Cependant, certaines fonctionnalités du site peuvent ne pas fonctionner correctement sans cookies.",
+        cookies_intro3: "En continuant à utiliser notre site, vous acceptez l'utilisation des cookies conformément à cette politique de confidentialité.",
 
+        // Policy Updates
         updates_title: "Mises à jour de la politique",
-        updates_intro: "Nous pouvons mettre à jour cette politique de confidentialité occasionnellement pour refléter les changements dans nos pratiques ou les exigences légales. Toute modification sera publiée sur cette page, et la politique révisée s'appliquera à partir de la date de publication.",
+        updates_intro: "Nous pouvons mettre à jour cette politique de confidentialité occasionnellement pour refléter les changements dans nos pratiques ou les exigences légales. Toute modification sera publiée sur cette page et la politique révisée s'appliquera à compter de la date de publication.",
 
+        // Contact Information
         contact_title: "Informations de contact",
         contact_intro: "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, n'hésitez pas à nous contacter :",
-        contact_email: "📧 E-mail : Génération du lien...",
+        contact_email: "📧 Email : Génération du lien...",
         contact_phone: "📞 Téléphone : +86 18054365167",
-        contact_page: "🔗 Visitez notre page de contact",
+        page: "Visitez notre page de contact",
 
+        // Footer
         quick_links: "Liens rapides",
-        about_us: "À propos de nous",
         follow_us: "Suivez-nous",
         privacy_policy: "Politique de confidentialité",
         terms_of_service: "Conditions d'utilisation",
-        contact_us: "Contacter CHENHUA AUTO",
+        contact: "Contact",
+        about_us: "À propos de nous",
+        contact_us: "Contactez CHENHUA AUTO",
         full_name: "Nom complet",
-        company_name: "Nom de l’entreprise",
+        company_name: "Nom de l'entreprise",
         phone_number: "Numéro de téléphone",
         whatsapp: "WhatsApp",
         wechat: "WeChat",
-
         toggle_theme: "Changer le thème"
     },
 
     ar: {
+        // Header & Navigation
         home: "الرئيسية",
         products: "المنتجات",
         about: "من نحن",
         contact: "اتصل بنا",
-        privacy_title: "سياسة الخصوصية",
-        privacy_text: "توضح سياسة الخصوصية هذه كيف تقوم CHENHUA AUTO بجمع معلوماتك واستخدامها وحمايتها.",
 
-        privacy_title: "سياسة الخصوصية",
-        privacy_intro: "توضح سياسة الخصوصية هذه كيف تقوم <strong>CHENHUA AUTO</strong> بجمع معلوماتك واستخدامها وحمايتها.",
+        // Privacy Intro
+        privac_title: "سياسة الخصوصية",
+        privacy_text: "توضح سياسة الخصوصية هذه كيف تقوم CHENHUA INTERNATIONAL بجمع معلوماتك واستخدامها وحمايتها.",
 
+        // Information We Collect
         info_title: "المعلومات التي نجمعها",
-        info_intro: "قد تقوم CHENHUA AUTO بجمع الأنواع التالية من المعلومات:",
-        info_personal: "البيانات الشخصية: الاسم، عنوان البريد الإلكتروني، رقم الهاتف، وغيرها من تفاصيل الاتصال.",
-        info_technical: "البيانات التقنية: عنوان IP، نوع المتصفح، نظام التشغيل، معلومات الجهاز، وأوقات الوصول.",
-        info_behavioral: "البيانات السلوكية: الصفحات التي تم زيارتها، الروابط التي تم النقر عليها، الوقت المستغرق في الموقع، وتفضيلات المستخدم.",
+        info_intro: "قد تجمع CHENHUA INTERNATIONAL الأنواع التالية من المعلومات:",
+        info_personal: "البيانات الشخصية: الاسم، عنوان البريد الإلكتروني، رقم الهاتف، وبيانات الاتصال الأخرى.",
+        info_technical: "البيانات التقنية: عنوان IP، نوع المتصفح، نظام التشغيل، معلومات الجهاز وأوقات الوصول.",
+        info_behavioral: "البيانات السلوكية: الصفحات التي تمت زيارتها، الروابط التي تم النقر عليها، مدة التصفح، وتفضيلات المستخدم.",
 
-        usage_title: "كيف نستخدم معلوماتك",
-        usage_intro: "تستخدم CHENHUA AUTO المعلومات التي يتم جمعها للأغراض التالية:",
-        usage_inquiries: "لمعالجة الاستفسارات: نستخدم معلوماتك الشخصية للرد على رسائلك وطلباتك ودعم العملاء.",
-        usage_experience: "لتحسين تجربة المستخدم: تساعدنا البيانات التقنية والسلوكية في تحسين موقعنا وخدماتنا وفقًا لتفضيلات المستخدم.",
-        usage_marketing: "لأغراض تسويقية (إن وُجد): بموافقتك، قد نرسل لك تحديثات أو عروضًا أو محتوى ترويجيًا.",
-        usage_legal: "للإيفاء بالالتزامات القانونية: قد نستخدم معلوماتك للامتثال للمتطلبات التنظيمية أو الضريبية أو القانونية.",
+        // How We Use Your Information
+        usage_title: "كيفية استخدام معلوماتك",
+        usage_intro: "تستخدم CHENHUA INTERNATIONAL المعلومات المجمعة للأغراض التالية:",
+        usage_inquiries: "لمعالجة الاستفسارات: نستخدم معلوماتك الشخصية للرد على رسائلك، طلبات المنتجات، أو احتياجات دعم العملاء.",
+        usage_experience: "لتحسين تجربة المستخدم: تساعدنا البيانات التقنية والسلوكية على تحسين موقعنا وتخصيص خدماتنا لتناسب تفضيلات المستخدمين.",
+        usage_marketing: "لأغراض التسويق (إذا كان ذلك مناسبًا): بموافقتك، قد نرسل لك تحديثات، عروض أو محتوى ترويجي.",
+        usage_legal: "للامتثال للالتزامات القانونية: قد نستخدم معلوماتك للوفاء بالمتطلبات التنظيمية أو الضريبية أو القانونية.",
 
+        // Sharing Your Information
         sharing_title: "مشاركة معلوماتك",
-        sharing_intro: "تقدر CHENHUA AUTO خصوصيتك وتهدف إلى الشفافية. نريدك أن تفهم كيفية مشاركة معلوماتك:",
-        sharing_nosell: "عدم بيع البيانات: لا نقوم ببيع أو تأجير أو مشاركة بياناتك الشخصية مع أطراف ثالثة.",
-        sharing_services: "الخدمات الخارجية: قد نشارك بياناتك مع شركاء موثوقين يساعدوننا في تشغيل الموقع والخدمات، مثل:",
-        sharing_google: "Google Analytics – لتحليل حركة الزوار وسلوك المستخدمين",
-        sharing_payment: "معالجات الدفع – لإجراء المعاملات بأمان",
-        sharing_email: "مزودو خدمة البريد الإلكتروني – لإرسال الرسائل التي اشتركت بها",
+        sharing_intro: "تقدر CHENHUA INTERNATIONAL خصوصيتك وشفافيتك. نريدك أن تفهم كيف يتم مشاركة معلوماتك:",
+        sharing_nosell: "عدم بيع البيانات: لا نقوم ببيع أو تداول أو تأجير بياناتك الشخصية لأطراف ثالثة.",
+        sharing_services: "الخدمات التابعة لجهات خارجية: قد نشارك البيانات مع شركاء موثوقين يساعدوننا في تشغيل الموقع والخدمات، مثل:",
+        sharing_google: "Google Analytics – لتحليل حركة الموقع وأنماط الاستخدام",
+        sharing_payment: "معالجات الدفع – لمعالجة المعاملات بأمان",
+        sharing_email: "مزودو خدمات البريد الإلكتروني – لإرسال الرسائل التي وافقت عليها",
 
-        security_title: "أمان البيانات",
-        security_intro: "تلتزم CHENHUA AUTO بحماية معلوماتك وقد طبقت تدابير أمان قوية لضمان ذلك:",
-        security_ssl: "تشفير SSL: يتم تشفير جميع البيانات المرسلة بين متصفحك وخوادمنا باستخدام تقنية SSL القياسية.",
-        security_firewall: "جدران حماية وضوابط وصول: نستخدم جدران حماية متقدمة وبروتوكولات وصول مقيدة لضمان أمان بياناتك.",
-        security_storage: "تخزين آمن: يتم تخزين بياناتك الشخصية في بيئات آمنة ولا يمكن الوصول إليها إلا من قبل الموظفين المصرح لهم.",
-        security_breach: "منع الانتهاكات: نقوم بإجراء تدقيقات أمان دورية وتحديثات برمجية ومراقبة لمنع الوصول غير المصرح به أو الانتهاكات.",
+        // Data Security
+        security_title: "أمن البيانات",
+        security_intro: "تلتزم CHENHUA INTERNATIONAL بحماية معلوماتك وقد نفذت تدابير أمان قوية لحمايتها:",
+        security_ssl: "تشفير SSL: جميع البيانات المنقولة بين متصفحك وخوادمنا مشفرة باستخدام تقنية SSL القياسية للصناعة.",
+        security_firewall: "الجدران النارية والتحكم في الوصول: نستخدم جدران نارية متقدمة وبروتوكولات وصول محدودة للحفاظ على أمان بياناتك.",
+        security_storage: "التخزين الآمن: يتم تخزين بياناتك الشخصية في بيئات آمنة ويصل إليها فقط الأشخاص المصرح لهم.",
+        security_breach: "منع الاختراق: يتم إجراء مراجعات أمنية منتظمة وتحديثات برامج ومراقبة لمنع الوصول غير المصرح به أو اختراق البيانات.",
 
+        // Your Rights
         rights_title: "حقوقك",
-        rights_intro: "بصفتك مستخدمًا لخدمات CHENHUA AUTO، لديك الحقوق التالية فيما يتعلق ببياناتك الشخصية:",
+        rights_intro: "بصفتك مستخدمًا لخدمات CHENHUA INTERNATIONAL، لديك الحقوق التالية فيما يتعلق ببياناتك الشخصية:",
         rights_access: "حق الوصول: يمكنك طلب نسخة من المعلومات الشخصية التي نحتفظ بها عنك في أي وقت.",
-        rights_correct: "حق التصحيح: إذا كنت تعتقد أن لدينا معلومات غير دقيقة أو غير مكتملة، يمكنك طلب تصحيحها.",
+        rights_correct: "حق التصحيح: إذا كنت تعتقد أن أي معلومات لدينا غير دقيقة أو غير مكتملة، لديك الحق في طلب التصحيح.",
         rights_delete: "حق الحذف: يمكنك طلب حذف بياناتك الشخصية من أنظمتنا، مع مراعاة الالتزامات القانونية والتشغيلية.",
-        rights_contact: "لإرسال طلب بخصوص البيانات، يرجى التواصل معنا عبر البريد الإلكتروني: sales@chenhuaauto.com.",
+        rights_contact: "لإجراء طلب متعلق ببياناتك، يرجى الاتصال بنا على",
+        rights_contact_email: "sales@chenhuaauto.com",
 
-        cookies_title: "الكوكيز",
-        cookies_intro1: "قد يستخدم موقعنا الإلكتروني ملفات تعريف الارتباط (الكوكيز) لتحسين تجربة التصفح وتحليل حركة المرور. الكوكيز هي ملفات صغيرة يتم تخزينها على جهازك وتساعدنا في فهم كيفية استخدامك للموقع.",
-        cookies_intro2: "يمكنك تعطيل الكوكيز من خلال إعدادات المتصفح. ومع ذلك، قد لا تعمل بعض ميزات الموقع بشكل صحيح بدون تمكين الكوكيز.",
-        cookies_intro3: "من خلال الاستمرار في استخدام موقعنا، فإنك توافق على استخدامنا للكوكيز وفقًا لسياسة الخصوصية هذه.",
+        // Cookies
+        cookies_title: "ملفات تعريف الارتباط (Cookies)",
+        cookies_intro1: "قد يستخدم موقعنا ملفات تعريف الارتباط لتعزيز تجربة التصفح وتحليل حركة المرور. ملفات تعريف الارتباط هي ملفات بيانات صغيرة تُخزن على جهازك لمساعدتنا في فهم كيفية استخدامك لموقعنا.",
+        cookies_intro2: "لديك خيار تعطيل ملفات تعريف الارتباط من إعدادات المتصفح. ومع ذلك، يرجى ملاحظة أن بعض ميزات الموقع قد لا تعمل بشكل صحيح بدون تمكين ملفات تعريف الارتباط.",
+        cookies_intro3: "بالاستمرار في استخدام موقعنا، فإنك توافق على استخدامنا لملفات تعريف الارتباط وفقًا لسياسة الخصوصية هذه.",
 
+        // Policy Updates
         updates_title: "تحديثات السياسة",
-        updates_intro: "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لتعكس التغييرات في ممارساتنا أو المتطلبات القانونية. سيتم نشر أي تغييرات على هذه الصفحة، وستدخل السياسة المحدثة حيز التنفيذ من تاريخ النشر.",
+        updates_intro: "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لتعكس التغييرات في ممارساتنا أو المتطلبات القانونية. سيتم نشر أي تغييرات على هذه الصفحة وستطبق السياسة المعدلة اعتبارًا من تاريخ النشر.",
 
+        // Contact Information
         contact_title: "معلومات الاتصال",
-        contact_intro: "إذا كان لديك أي أسئلة أو استفسارات بخصوص سياسة الخصوصية هذه، لا تتردد في التواصل معنا:",
-        contact_email: "📧 البريد الإلكتروني: جاري توليد الرابط...",
+        contact_intro: "إذا كانت لديك أي أسئلة أو مخاوف بشأن سياسة الخصوصية هذه، فلا تتردد في الاتصال بنا:",
+        contact_email: "📧 البريد الإلكتروني: جاري إنشاء الرابط...",
         contact_phone: "📞 الهاتف: +86 18054365167",
-        contact_page: "🔗 زر صفحتنا الخاصة بالتواصل",
+        page: "قم بزيارة صفحة الاتصال بنا",
 
+        // Footer
         quick_links: "روابط سريعة",
-        about_us: "معلومات عنا",
         follow_us: "تابعنا",
         privacy_policy: "سياسة الخصوصية",
-        terms_of_service: "شروط الاستخدام",
+        terms_of_service: "شروط الخدمة",
+        contact: "اتصل بنا",
+        about_us: "من نحن",
         contact_us: "اتصل بـ CHENHUA AUTO",
         full_name: "الاسم الكامل",
         company_name: "اسم الشركة",
         phone_number: "رقم الهاتف",
         whatsapp: "واتساب",
-        wechat: "وي شات",
-
-        toggle_theme: "تبديل المظهر"
+        wechat: "WeChat",
+        toggle_theme: "تبديل الوضع"
     },
 
     zh: {
-        "home": "首页",
-        "products": "产品",
-        "about": "关于我们",
-        "contact": "联系我们",
-        "privacy_title": "隐私政策",
-        "privacy_text": "本隐私政策说明了 CHENHUA AUTO 如何收集、使用和保护您的信息。",
+        // Header & Navigation
+        home: "首页",
+        products: "产品",
+        about: "关于我们",
+        contact: "联系",
 
-        "privacy_title": "隐私政策",
-        "privacy_intro": "本隐私政策说明了 <strong>CHENHUA AUTO</strong> 如何收集、使用和保护您的信息。",
+        // Privacy Intro
+        privac_title: "隐私政策",
+        privacy_text: "本隐私政策说明CHENHUA INTERNATIONAL如何收集、使用和保护您的信息。",
 
-        "info_title": "我们收集的信息",
-        "info_intro": "CHENHUA AUTO 可能会收集以下类型的信息：",
-        "info_personal": "个人数据：姓名、电子邮箱、电话号码及其他联系方式。",
-        "info_technical": "技术数据：IP 地址、浏览器类型、操作系统、设备信息和访问时间。",
-        "info_behavioral": "行为数据：访问的页面、点击的链接、在网站上的停留时间和用户偏好。",
+        // Information We Collect
+        info_title: "我们收集的信息",
+        info_intro: "CHENHUA INTERNATIONAL可能会收集以下类型的信息：",
+        info_personal: "个人数据：姓名、电子邮箱、电话号码及其他联系方式。",
+        info_technical: "技术数据：IP地址、浏览器类型、操作系统、设备信息及访问时间。",
+        info_behavioral: "行为数据：访问页面、点击链接、网站停留时间及用户偏好。",
 
-        "usage_title": "我们如何使用您的信息",
-        "usage_intro": "CHENHUA AUTO 使用收集的信息用于以下目的：",
-        "usage_inquiries": "处理咨询：我们使用您的个人信息来回复您的留言、产品请求或客户支持需求。",
-        "usage_experience": "提升用户体验：技术和行为数据帮助我们优化网站并根据用户偏好进行调整。",
-        "usage_marketing": "市场营销（如适用）：在您同意的情况下，我们可能会向您发送更新、优惠或促销内容。",
-        "usage_legal": "履行法律义务：我们可能会使用您的信息来满足监管、税务或法律要求。",
+        // How We Use Your Information
+        usage_title: "我们如何使用您的信息",
+        usage_intro: "CHENHUA INTERNATIONAL收集的信息用于以下目的：",
+        usage_inquiries: "处理咨询：我们使用您的个人信息来回复您的留言、产品请求或客户支持需求。",
+        usage_experience: "改善用户体验：技术和行为数据帮助我们优化网站，并根据用户偏好定制服务。",
+        usage_marketing: "营销（如适用）：在您同意的情况下，我们可能向您发送更新、优惠或推广内容。",
+        usage_legal: "遵守法律义务：我们可能使用您的信息以满足监管、税务或法律要求。",
 
-        "sharing_title": "我们如何共享您的信息",
-        "sharing_intro": "CHENHUA AUTO 重视您的隐私并致力于透明。我们希望您了解信息共享的方式：",
-        "sharing_nosell": "不出售数据：我们不会向第三方出售、交易或出租您的个人数据。",
-        "sharing_services": "第三方服务：我们可能会与帮助我们运营网站和服务的可信合作伙伴共享数据，例如：",
-        "sharing_google": "Google Analytics – 用于分析网站流量和使用模式",
-        "sharing_payment": "支付处理商 – 安全处理交易",
-        "sharing_email": "电子邮件服务提供商 – 发送您订阅的通信内容",
+        // Sharing Your Information
+        sharing_title: "信息共享",
+        sharing_intro: "CHENHUA INTERNATIONAL重视您的隐私与透明度。我们希望您了解信息如何被共享：",
+        sharing_nosell: "不出售数据：我们不会将您的个人数据出售、交易或出租给第三方。",
+        sharing_services: "第三方服务：我们可能会与可信合作伙伴共享数据，以协助运营网站和服务，例如：",
+        sharing_google: "Google Analytics – 分析网站流量和使用模式",
+        sharing_payment: "支付处理商 – 安全处理交易",
+        sharing_email: "电子邮件服务提供商 – 发送您选择接收的通信内容",
 
-        "security_title": "数据安全",
-        "security_intro": "CHENHUA AUTO 致力于保护您的信息，并已采取强有力的安全措施保障数据安全：",
-        "security_ssl": "SSL 加密：您的浏览器与我们服务器之间传输的所有数据均采用行业标准的 SSL 技术加密。",
-        "security_firewall": "防火墙与访问控制：我们使用先进的防火墙和受限访问协议以确保数据安全。",
-        "security_storage": "安全存储：您的个人数据被存储在安全的环境中，仅限授权人员访问。",
-        "security_breach": "防范数据泄露：我们定期进行安全审计、软件更新和监控，防止未经授权的访问或数据泄露。",
+        // Data Security
+        security_title: "数据安全",
+        security_intro: "CHENHUA INTERNATIONAL致力于保护您的信息，并实施了强有力的安全措施：",
+        security_ssl: "SSL加密：您浏览器与我们服务器之间传输的所有数据均采用行业标准SSL加密。",
+        security_firewall: "防火墙和访问控制：我们使用高级防火墙和限制访问协议来保障数据安全。",
+        security_storage: "安全存储：您的个人数据存储在安全环境中，仅授权人员可访问。",
+        security_breach: "防止数据泄露：定期进行安全审计、软件更新和监控，以防止未经授权的访问或数据泄露。",
 
-        "rights_title": "您的权利",
-        "rights_intro": "作为 CHENHUA AUTO 服务的用户，您拥有以下关于个人数据的权利：",
-        "rights_access": "访问权：您可随时请求我们提供我们所持有的您的个人信息副本。",
-        "rights_correct": "更正权：如果您认为我们的信息不准确或不完整，您有权要求更正。",
-        "rights_delete": "删除权：您可以请求我们删除您的个人数据，但需符合法律与运营义务。",
-        "rights_contact": "如需提出数据请求，请通过 sales@chenhuaauto.com 联系我们。",
+        // Your Rights
+        rights_title: "您的权利",
+        rights_intro: "作为CHENHUA INTERNATIONAL服务的用户，您对个人数据拥有以下权利：",
+        rights_access: "访问权：您可以随时请求获取我们持有的您的个人信息副本。",
+        rights_correct: "更正权：如果您认为我们持有的信息不准确或不完整，您有权请求更正。",
+        rights_delete: "删除权：您可以请求删除我们系统中的个人数据，但需遵守法律及运营义务。",
+        rights_contact: "如需提交数据请求，请联系我们：",
+        rights_contact_email: "sales@chenhuaauto.com",
 
-        "cookies_title": "Cookie 政策",
-        "cookies_intro1": "我们的网站可能使用 Cookie 来增强您的浏览体验并分析网站流量。Cookie 是存储在您设备上的小型数据文件，帮助我们了解您如何使用我们的网站。",
-        "cookies_intro2": "您可以通过浏览器设置禁用 Cookie。但请注意，禁用后网站某些功能可能无法正常工作。",
-        "cookies_intro3": "继续使用我们的网站即表示您同意我们根据本隐私政策使用 Cookie。",
+        // Cookies
+        cookies_title: "Cookies（网站追踪信息）",
+        cookies_intro1: "我们的网站可能使用Cookies来提升浏览体验和分析网站流量。Cookies是存储在您设备上的小型数据文件，帮助我们了解您如何使用网站。",
+        cookies_intro2: "您可以通过浏览器设置禁用Cookies。但请注意，部分网站功能在未启用Cookies的情况下可能无法正常使用。",
+        cookies_intro3: "继续使用我们的网站即表示您同意我们按照本隐私政策使用Cookies。",
 
-        "updates_title": "政策更新",
-        "updates_intro": "我们可能会不时更新本隐私政策以反映我们做法或法律要求的变化。任何更改将发布在本页面，更新后的政策将自发布之日起生效。",
+        // Policy Updates
+        updates_title: "政策更新",
+        updates_intro: "我们可能会不定期更新本隐私政策，以反映实践或法律要求的变化。任何更新都会在本页面公布，修订后的政策自发布之日起生效。",
 
-        "contact_title": "联系信息",
-        "contact_intro": "如果您对本隐私政策有任何疑问或担忧，请随时联系我们：",
-        "contact_email": "📧 邮箱：正在生成链接...",
-        "contact_phone": "📞 电话：+86 18054365167",
-        "contact_page": "🔗 访问我们的联系页面",
+        // Contact Information
+        contact_title: "联系信息",
+        contact_intro: "如果您对本隐私政策有任何疑问或顾虑，请随时联系我们：",
+        contact_email: "📧 邮箱：生成链接中...",
+        contact_phone: "📞 电话：+86 18054365167",
+        page: "访问我们的联系页面",
 
-        "quick_links": "快速链接",
-        "about_us": "关于我们",
-        "follow_us": "关注我们",
-        "privacy_policy": "隐私政策",
-        "terms_of_service": "服务条款",
-        "contact_us": "联系 CHENHUA AUTO",
-        "full_name": "全名",
-        "company_name": "公司名称",
-        "phone_number": "电话号码",
-        "whatsapp": "WhatsApp",
-        "wechat": "微信",
-
-        "toggle_theme": "切换主题"
+        // Footer
+        quick_links: "快速链接",
+        follow_us: "关注我们",
+        privacy_policy: "隐私政策",
+        terms_of_service: "服务条款",
+        contact: "联系",
+        about_us: "关于我们",
+        contact_us: "联系CHENHUA AUTO",
+        full_name: "全名",
+        company_name: "公司名称",
+        phone_number: "电话号码",
+        whatsapp: "WhatsApp",
+        wechat: "微信",
+        toggle_theme: "切换主题"
     }
 
 
