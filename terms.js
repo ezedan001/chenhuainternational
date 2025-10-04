@@ -129,22 +129,22 @@ const translations = {
 
     // Introduction
     intro_title: "Introduction",
-    intro_text1: "This Terms of Service agreement outlines the rules and guidelines for using the website, products, and services provided by <strong>CHENHUA INTERNATIONAL</strong>.",
-    intro_text2: "By accessing or using our platform, you agree to be bound by these terms. These terms are designed to ensure a clear, secure, and respectful experience for all users of <strong>CHENHUA INTERNATIONAL</strong>.",
+    intro_text1: "This Terms of Service agreement outlines the rules and guidelines for using the website, products, and services provided by CHENHUA INTERNATIONAL.",
+    intro_text2: "By accessing or using our platform, you agree to be bound by these terms. These terms are designed to ensure a clear, secure, and respectful experience for all users of CHENHUA INTERNATIONAL.",
 
     // User Responsibilities
     responsibilities_title: "User Responsibilities",
-    responsibilities_text: "As a user of <strong>CHENHUA INTERNATIONAL</strong>, you agree to the following responsibilities while using our website, products, and services:",
+    responsibilities_text: "As a user of CHENHUA INTERNATIONAL, you agree to the following responsibilities while using our website, products, and services:",
     responsibilities_list1: "Use the website and services in compliance with all applicable laws and regulations.",
     responsibilities_list2: "Provide accurate, honest, and complete information when submitting product inquiries and using contact forms.",
     responsibilities_list3: "Do not engage in fraudulent or malicious activities that could harm the website, its services, or its users.",
     responsibilities_list4: "Respect the privacy and confidentiality of other users and their information.",
-    responsibilities_list5: "Abide by any other guidelines and policies set forth by <strong>CHENHUA AUTO</strong>.",
+    responsibilities_list5: "Abide by any other guidelines and policies set forth by CHENHUA INTERNATIONAL.",
 
     // Orders & Communication
     orders_title: "Orders and Communication",
-    orders_text1: "At <strong>CHENHUA INTERNATIONAL</strong>, all product inquiries and orders are handled manually through direct communication channels such as WhatsApp, email, or phone. We do not support instant online purchasing on our website.",
-    orders_list1: "Customers are required to initiate product inquiries through the provided contact forms, email (<a href='mailto:support@chenhuaauto.com'>support@chenhuaauto.com</a>), or WhatsApp.",
+    orders_text1: "At CHENHUA INTERNATIONAL, all product inquiries and orders are handled manually through direct communication channels such as WhatsApp, email, or phone. We do not support instant online purchasing on our website.",
+    orders_list1: "Customers are required to initiate product inquiries through the provided contact forms, email (support@chenhuaauto.com), or WhatsApp.",
     orders_list2: "All orders are processed manually after detailed communication with our team regarding pricing, specifications, and delivery terms.",
     orders_list3: "We aim to respond to all inquiries as quickly as possible, typically within 24–48 hours.",
     orders_list4: "Quotes, invoices, and further transaction details are shared directly after mutual agreement.",
@@ -152,9 +152,9 @@ const translations = {
 
     // Intellectual Property
     intellectual_title: "Intellectual Property",
-    intellectual_text1: "All content displayed on this website, including but not limited to logos, product images, graphics, text, layout, and design elements, are the exclusive property of <strong>CHENHUA INTERNATIONAL</strong>.",
+    intellectual_text1: "All content displayed on this website, including but not limited to logos, product images, graphics, text, layout, and design elements, are the exclusive property of CHENHUA INTERNATIONAL.",
     intellectual_list1: "Unauthorized use, reproduction, or distribution of any content without prior written permission is strictly prohibited.",
-    intellectual_list2: "All trademarks, service marks, and logos used on the website are owned by or licensed to CHENHUA AUTO and are protected by applicable intellectual property laws.",
+    intellectual_list2: "All trademarks, service marks, and logos used on the website are owned by or licensed to CHENHUA INTERNATIONAL and are protected by applicable intellectual property laws.",
     intellectual_list3: "Users may not copy, reuse, or modify any material from the website for commercial or public purposes without our explicit consent.",
     intellectual_text2: "We reserve all rights not expressly granted in and to the website and its content.",
 
@@ -174,12 +174,12 @@ const translations = {
     // Contact Info Section
     contact_section_title: "📞 Contact Info Section",
     contact_section_intro: "If you have questions about these terms, contact us at:",
-    contact_email: "📧 Email: <a id='emailLink' href='mailto:support@chenhuaauto.com'>support@chenhuaauto.com</a>",
-    contact_whatsapp: "📞 WhatsApp: <a id='whatsappLink' href='' target='_blank'>Message Us</a>",
-    contact_page: "🔗 <a href='contact.html'>Visit our Contact Page</a>",
+    contact_email: "📧 Email: support@chenhuaauto.com",
+    contact_whatsapp: "📞 WhatsApp: Message Us",
+    contact_page: "🔗 Visit our Contact Page",
 
     // Call to Action
-    action_1: "Want to do business with <span class='span'>CHENHUA AUTO</span>?",
+    action_1: "Want to do business with CHENHUA INTERNATIONAL?",
     action_2: "We’re ready to provide you with the best rims and support for your needs. Let’s grow together.",
     contact_sales: "Contact Our Sales Team",
 
@@ -211,22 +211,22 @@ const translations = {
 
     // Introduction
     intro_title: "Introduction",
-    intro_text1: "Cet accord sur les conditions d'utilisation décrit les règles et directives pour l'utilisation du site web, des produits et des services fournis par <strong>CHENHUA INTERNATIONAL</strong>.",
-    intro_text2: "En accédant à notre plateforme ou en l'utilisant, vous acceptez d'être lié par ces conditions. Ces conditions sont conçues pour assurer une expérience claire, sécurisée et respectueuse pour tous les utilisateurs de <strong>CHENHUA INTERNATIONAL</strong>.",
+    intro_text1: "Cet accord sur les conditions d'utilisation décrit les règles et directives pour l'utilisation du site web, des produits et des services fournis par CHENHUA INTERNATIONAL.",
+    intro_text2: "En accédant à notre plateforme ou en l'utilisant, vous acceptez d'être lié par ces conditions. Ces conditions sont conçues pour assurer une expérience claire, sécurisée et respectueuse pour tous les utilisateurs de CHENHUA INTERNATIONAL.",
 
     // User Responsibilities
     responsibilities_title: "Responsabilités de l'utilisateur",
-    responsibilities_text: "En tant qu'utilisateur de <strong>CHENHUA INTERNATIONAL</strong>, vous acceptez les responsabilités suivantes lors de l'utilisation de notre site, produits et services :",
+    responsibilities_text: "En tant qu'utilisateur de CHENHUA INTERNATIONAL, vous acceptez les responsabilités suivantes lors de l'utilisation de notre site, produits et services :",
     responsibilities_list1: "Utiliser le site et les services conformément à toutes les lois et réglementations applicables.",
     responsibilities_list2: "Fournir des informations précises, honnêtes et complètes lors de la soumission de demandes de produits et de l'utilisation des formulaires de contact.",
     responsibilities_list3: "Ne pas participer à des activités frauduleuses ou malveillantes susceptibles de nuire au site, à ses services ou à ses utilisateurs.",
     responsibilities_list4: "Respecter la vie privée et la confidentialité des autres utilisateurs et de leurs informations.",
-    responsibilities_list5: "Respecter toutes les autres directives et politiques établies par <strong>CHENHUA AUTO</strong>.",
+    responsibilities_list5: "Respecter toutes les autres directives et politiques établies par CHENHUA INTERNATIONAL.",
 
     // Orders & Communication
     orders_title: "Commandes et Communication",
-    orders_text1: "Chez <strong>CHENHUA INTERNATIONAL</strong>, toutes les demandes de produits et commandes sont traitées manuellement via des canaux de communication directs tels que WhatsApp, email ou téléphone. Nous ne proposons pas d'achat instantané en ligne sur notre site.",
-    orders_list1: "Les clients doivent initier les demandes de produits via les formulaires de contact fournis, email (<a href='mailto:support@chenhuaauto.com'>support@chenhuaauto.com</a>) ou WhatsApp.",
+    orders_text1: "Chez CHENHUA INTERNATIONAL, toutes les demandes de produits et commandes sont traitées manuellement via des canaux de communication directs tels que WhatsApp, email ou téléphone. Nous ne proposons pas d'achat instantané en ligne sur notre site.",
+    orders_list1: "Les clients doivent initier les demandes de produits via les formulaires de contact fournis, email (support@chenhuaauto.com) ou WhatsApp.",
     orders_list2: "Toutes les commandes sont traitées manuellement après une communication détaillée avec notre équipe concernant les prix, les spécifications et les modalités de livraison.",
     orders_list3: "Nous nous efforçons de répondre à toutes les demandes aussi rapidement que possible, généralement dans les 24 à 48 heures.",
     orders_list4: "Les devis, factures et autres détails de transaction sont partagés directement après accord mutuel.",
@@ -234,9 +234,9 @@ const translations = {
 
     // Intellectual Property
     intellectual_title: "Propriété intellectuelle",
-    intellectual_text1: "Tout le contenu affiché sur ce site, y compris mais sans s'y limiter, logos, images de produits, graphiques, textes, mise en page et éléments de design, est la propriété exclusive de <strong>CHENHUA INTERNATIONAL</strong>.",
+    intellectual_text1: "Tout le contenu affiché sur ce site, y compris mais sans s'y limiter, logos, images de produits, graphiques, textes, mise en page et éléments de design, est la propriété exclusive de CHENHUA INTERNATIONAL.",
     intellectual_list1: "L'utilisation, la reproduction ou la distribution non autorisée de tout contenu sans autorisation écrite préalable est strictement interdite.",
-    intellectual_list2: "Toutes les marques, marques de service et logos utilisés sur le site sont détenus ou licenciés par CHENHUA AUTO et sont protégés par les lois applicables sur la propriété intellectuelle.",
+    intellectual_list2: "Toutes les marques, marques de service et logos utilisés sur le site sont détenus ou licenciés par CHENHUA INTERNATIONAL et sont protégés par les lois applicables sur la propriété intellectuelle.",
     intellectual_list3: "Les utilisateurs ne peuvent pas copier, réutiliser ou modifier le contenu du site à des fins commerciales ou publiques sans notre consentement explicite.",
     intellectual_text2: "Nous nous réservons tous les droits non expressément accordés sur le site et son contenu.",
 
@@ -256,12 +256,12 @@ const translations = {
     // Contact Info Section
     contact_section_title: "📞 Section des contacts",
     contact_section_intro: "Si vous avez des questions concernant ces conditions, contactez-nous à :",
-    contact_email: "📧 Email : <a id='emailLink' href='mailto:support@chenhuaauto.com'>support@chenhuaauto.com</a>",
-    contact_whatsapp: "📞 WhatsApp : <a id='whatsappLink' href='' target='_blank'>Envoyez un message</a>",
-    contact_page: "🔗 <a href='contact.html'>Visitez notre page Contact</a>",
+    contact_email: "📧 Email : support@chenhuaauto.com",
+    contact_whatsapp: "📞 WhatsApp : Envoyez un message",
+    contact_page: "🔗 Visitez notre page Contact",
 
     // Call to Action
-    action_1: "Vous souhaitez faire affaire avec <span class='span'>CHENHUA AUTO</span> ?",
+    action_1: "Vous souhaitez faire affaire avec CHENHUA INTERNATIONAL ?",
     action_2: "Nous sommes prêts à vous fournir les meilleures jantes et un support adapté à vos besoins. Grandissons ensemble.",
     contact_sales: "Contactez notre équipe commerciale",
 
@@ -293,22 +293,22 @@ const translations = {
 
     // Introduction
     intro_title: "مقدمة",
-    intro_text1: "تحدد هذه الاتفاقية الخاصة بشروط الخدمة القواعد والإرشادات لاستخدام الموقع الإلكتروني والمنتجات والخدمات المقدمة من <strong>CHENHUA INTERNATIONAL</strong>.",
-    intro_text2: "بالوصول إلى منصتنا أو استخدامها، فإنك توافق على الالتزام بهذه الشروط. تهدف هذه الشروط لضمان تجربة واضحة وآمنة ومحترمة لجميع مستخدمي <strong>CHENHUA INTERNATIONAL</strong>.",
+    intro_text1: "تحدد هذه الاتفاقية الخاصة بشروط الخدمة القواعد والإرشادات لاستخدام الموقع الإلكتروني والمنتجات والخدمات المقدمة من CHENHUA INTERNATIONAL.",
+    intro_text2: "بالوصول إلى منصتنا أو استخدامها، فإنك توافق على الالتزام بهذه الشروط. تهدف هذه الشروط لضمان تجربة واضحة وآمنة ومحترمة لجميع مستخدمي CHENHUA INTERNATIONAL.",
 
     // User Responsibilities
     responsibilities_title: "مسؤوليات المستخدم",
-    responsibilities_text: "بصفتك مستخدمًا لـ <strong>CHENHUA INTERNATIONAL</strong>، فإنك توافق على المسؤوليات التالية أثناء استخدام موقعنا وخدماتنا ومنتجاتنا:",
+    responsibilities_text: "بصفتك مستخدمًا لـ CHENHUA INTERNATIONAL، فإنك توافق على المسؤوليات التالية أثناء استخدام موقعنا وخدماتنا ومنتجاتنا:",
     responsibilities_list1: "استخدام الموقع والخدمات بما يتوافق مع جميع القوانين واللوائح المعمول بها.",
     responsibilities_list2: "تقديم معلومات دقيقة وصادقة وكاملة عند إرسال استفسارات المنتجات واستخدام نماذج الاتصال.",
     responsibilities_list3: "عدم المشاركة في أنشطة احتيالية أو ضارة قد تضر بالموقع أو خدماته أو مستخدميه.",
     responsibilities_list4: "احترام خصوصية وسرية المعلومات الخاصة بالمستخدمين الآخرين.",
-    responsibilities_list5: "الالتزام بأي سياسات وإرشادات أخرى تم وضعها من قبل <strong>CHENHUA AUTO</strong>.",
+    responsibilities_list5: "الالتزام بأي سياسات وإرشادات أخرى تم وضعها من قبل CHENHUA INTERNATIONAL.",
 
     // Orders & Communication
     orders_title: "الطلبات والتواصل",
-    orders_text1: "في <strong>CHENHUA INTERNATIONAL</strong>، تتم معالجة جميع استفسارات المنتجات والطلبات يدويًا عبر قنوات الاتصال المباشرة مثل WhatsApp أو البريد الإلكتروني أو الهاتف. نحن لا ندعم الشراء الفوري عبر الموقع الإلكتروني.",
-    orders_list1: "يُطلب من العملاء بدء استفسارات المنتجات من خلال نماذج الاتصال المقدمة أو البريد الإلكتروني (<a href='mailto:support@chenhuaauto.com'>support@chenhuaauto.com</a>) أو WhatsApp.",
+    orders_text1: "في CHENHUA INTERNATIONAL، تتم معالجة جميع استفسارات المنتجات والطلبات يدويًا عبر قنوات الاتصال المباشرة مثل WhatsApp أو البريد الإلكتروني أو الهاتف. نحن لا ندعم الشراء الفوري عبر الموقع الإلكتروني.",
+    orders_list1: "يُطلب من العملاء بدء استفسارات المنتجات من خلال نماذج الاتصال المقدمة أو البريد الإلكتروني (support@chenhuaauto.com) أو WhatsApp.",
     orders_list2: "يتم معالجة جميع الطلبات يدويًا بعد التواصل المفصل مع فريقنا بشأن الأسعار والمواصفات وشروط التسليم.",
     orders_list3: "نسعى للرد على جميع الاستفسارات في أسرع وقت ممكن، عادة خلال 24-48 ساعة.",
     orders_list4: "يتم مشاركة العروض والفواتير والتفاصيل الأخرى للمعاملات مباشرة بعد الاتفاق المتبادل.",
@@ -316,9 +316,9 @@ const translations = {
 
     // Intellectual Property
     intellectual_title: "الملكية الفكرية",
-    intellectual_text1: "جميع المحتويات المعروضة على هذا الموقع، بما في ذلك على سبيل المثال لا الحصر، الشعارات وصور المنتجات والرسومات والنصوص والتصميم، هي ملكية حصرية لـ <strong>CHENHUA INTERNATIONAL</strong>.",
+    intellectual_text1: "جميع المحتويات المعروضة على هذا الموقع، بما في ذلك على سبيل المثال لا الحصر، الشعارات وصور المنتجات والرسومات والنصوص والتصميم، هي ملكية حصرية لـ CHENHUA INTERNATIONAL<.",
     intellectual_list1: "يحظر استخدام أو نسخ أو توزيع أي محتوى بدون إذن كتابي مسبق.",
-    intellectual_list2: "جميع العلامات التجارية والشعارات المستخدمة على الموقع مملوكة أو مرخصة لشركة CHENHUA AUTO ومحمية بموجب قوانين الملكية الفكرية المعمول بها.",
+    intellectual_list2: "جميع العلامات التجارية والشعارات المستخدمة على الموقع مملوكة أو مرخصة لشركة CHENHUA INTERNATIONAL ومحمية بموجب قوانين الملكية الفكرية المعمول بها.",
     intellectual_list3: "لا يجوز للمستخدمين نسخ أو إعادة استخدام أو تعديل أي محتوى من الموقع لأغراض تجارية أو عامة دون موافقة صريحة منا.",
     intellectual_text2: "نحتفظ بجميع الحقوق غير الممنوحة صراحة على الموقع ومحتواه.",
 
@@ -338,12 +338,12 @@ const translations = {
     // Contact Info Section
     contact_section_title: "📞 قسم معلومات الاتصال",
     contact_section_intro: "إذا كانت لديك أي أسئلة حول هذه الشروط، يرجى التواصل معنا على:",
-    contact_email: "📧 البريد الإلكتروني: <a id='emailLink' href='mailto:support@chenhuaauto.com'>support@chenhuaauto.com</a>",
-    contact_whatsapp: "📞 واتساب: <a id='whatsappLink' href='' target='_blank'>أرسل رسالة</a>",
-    contact_page: "🔗 <a href='contact.html'>قم بزيارة صفحة الاتصال الخاصة بنا</a>",
+    contact_email: "📧 البريد الإلكتروني: support@chenhuaauto.com",
+    contact_whatsapp: "📞 واتساب: أرسل رسالة",
+    contact_page: "🔗 قم بزيارة صفحة الاتصال الخاصة بنا",
 
     // Call to Action
-    action_1: "هل ترغب في التعامل مع <span class='span'>CHENHUA AUTO</span>؟",
+    action_1: "هل ترغب في التعامل مع CHENHUA INTERNATIONAL؟",
     action_2: "نحن جاهزون لتزويدك بأفضل الجنوط والدعم المناسب لاحتياجاتك. دعنا ننمو معًا.",
     contact_sales: "اتصل بفريق المبيعات لدينا",
 
@@ -376,22 +376,22 @@ const translations = {
 
     // Introduction
     intro_title: "介绍",
-    intro_text1: "本服务条款协议概述了使用由 <strong>CHENHUA INTERNATIONAL</strong> 提供的网站、产品和服务的规则和指南。",
-    intro_text2: "访问或使用我们的平台，即表示您同意受这些条款的约束。这些条款旨在确保所有 <strong>CHENHUA INTERNATIONAL</strong> 用户获得清晰、安全和尊重的体验。",
+    intro_text1: "本服务条款协议概述了使用由 CHENHUA INTERNATIONAL 提供的网站、产品和服务的规则和指南。",
+    intro_text2: "访问或使用我们的平台，即表示您同意受这些条款的约束。这些条款旨在确保所有 CHENHUA INTERNATIONAL 用户获得清晰、安全和尊重的体验。",
 
     // User Responsibilities
     responsibilities_title: "用户责任",
-    responsibilities_text: "作为 <strong>CHENHUA INTERNATIONAL</strong> 的用户，您在使用我们的网站、产品和服务时需遵守以下责任：",
+    responsibilities_text: "作为 CHENHUA INTERNATIONAL 的用户，您在使用我们的网站、产品和服务时需遵守以下责任：",
     responsibilities_list1: "按照所有适用法律法规使用网站和服务。",
     responsibilities_list2: "在提交产品询价和使用联系表格时提供准确、真实和完整的信息。",
     responsibilities_list3: "不得从事可能损害网站、服务或其他用户的欺诈或恶意活动。",
     responsibilities_list4: "尊重其他用户及其信息的隐私和保密性。",
-    responsibilities_list5: "遵守 <strong>CHENHUA AUTO</strong> 制定的其他指南和政策。",
+    responsibilities_list5: "遵守 CHENHUA INTERNATIONAL 制定的其他指南和政策。",
 
     // Orders & Communication
     orders_title: "订单与沟通",
-    orders_text1: "在 <strong>CHENHUA INTERNATIONAL</strong>，所有产品询价和订单均通过 WhatsApp、电子邮件或电话等直接沟通渠道手动处理。我们的网站不支持即时在线购买。",
-    orders_list1: "客户需通过提供的联系表格、电子邮件 (<a href='mailto:support@chenhuaauto.com'>support@chenhuaauto.com</a>) 或 WhatsApp 发起产品询价。",
+    orders_text1: "在 CHENHUA INTERNATIONAL，所有产品询价和订单均通过 WhatsApp、电子邮件或电话等直接沟通渠道手动处理。我们的网站不支持即时在线购买。",
+    orders_list1: "客户需通过提供的联系表格、电子邮件 (support@chenhuaauto.com) 或 WhatsApp 发起产品询价。",
     orders_list2: "所有订单在与团队就价格、规格及交付条款进行详细沟通后手动处理。",
     orders_list3: "我们力求尽快回复所有询价，通常在24-48小时内。",
     orders_list4: "报价、发票及其他交易详情将在双方达成一致后直接提供。",
@@ -399,9 +399,9 @@ const translations = {
 
     // Intellectual Property
     intellectual_title: "知识产权",
-    intellectual_text1: "本网站显示的所有内容，包括但不限于徽标、产品图片、图形、文本、布局及设计元素，均为 <strong>CHENHUA INTERNATIONAL</strong> 的专有财产。",
+    intellectual_text1: "本网站显示的所有内容，包括但不限于徽标、产品图片、图形、文本、布局及设计元素，均为 CHENHUA INTERNATIONAL 的专有财产。",
     intellectual_list1: "未经事先书面许可，严禁擅自使用、复制或分发任何内容。",
-    intellectual_list2: "网站上使用的所有商标、服务标志和徽标均为 CHENHUA AUTO 所有或许可使用，并受适用知识产权法保护。",
+    intellectual_list2: "网站上使用的所有商标、服务标志和徽标均为 CHENHUA INTERNATIONAL 所有或许可使用，并受适用知识产权法保护。",
     intellectual_list3: "未经明确许可，用户不得为商业或公共目的复制、重用或修改网站上的任何材料。",
     intellectual_text2: "我们保留未明确授予的所有网站及其内容的权利。",
 
@@ -421,12 +421,12 @@ const translations = {
     // Contact Info Section
     contact_section_title: "📞 联系信息",
     contact_section_intro: "如对这些条款有疑问，请联系我们：",
-    contact_email: "📧 邮箱：<a id='emailLink' href='mailto:support@chenhuaauto.com'>support@chenhuaauto.com</a>",
-    contact_whatsapp: "📞 WhatsApp：<a id='whatsappLink' href='' target='_blank'>发送消息</a>",
-    contact_page: "🔗 <a href='contact.html'>访问我们的联系页面</a>",
+    contact_email: "📧 邮箱：support@chenhuaauto.com",
+    contact_whatsapp: "📞 WhatsApp：发送消息",
+    contact_page: "🔗 访问我们的联系页面",
 
     // Call to Action
-    action_1: "想与 <span class='span'>CHENHUA AUTO</span> 合作吗？",
+    action_1: "想与 CHENHUA INTERNATIONAL 合作吗？",
     action_2: "我们随时准备为您提供最佳轮毂和支持，共同成长。",
     contact_sales: "联系销售团队",
 
@@ -520,9 +520,9 @@ updateContactInfo();
 
 // 4 Professional Template Messages
 const templates = [
-  name => `Dear CHENHUA AUTO Team,\n\nMy name is ${name}. I’m interested in purchasing agricultural rims in bulk and would like more details on available sizes and prices.\n\nLooking forward to your reply.\nBest regards,\n${name}`,
-  name => `Hello CHENHUA AUTO,\n\nThis is ${name}. Please provide your latest product catalog for tractor and implement rims. I’m sourcing for distribution.\n\nThanks,\n${name}`,
-  name => `Hi CHENHUA AUTO,\n\nI’m ${name}, reaching out to discuss business cooperation. Kindly share your MOQ and delivery options.\n\nRegards,\n${name}`,
+  name => `Dear CHENHUA INTERNATIONAL Team,\n\nMy name is ${name}. I’m interested in purchasing agricultural rims in bulk and would like more details on available sizes and prices.\n\nLooking forward to your reply.\nBest regards,\n${name}`,
+  name => `Hello CHENHUA INTERNATIONAL,\n\nThis is ${name}. Please provide your latest product catalog for tractor and implement rims. I’m sourcing for distribution.\n\nThanks,\n${name}`,
+  name => `Hi CHENHUA INTERNATIONAL,\n\nI’m ${name}, reaching out to discuss business cooperation. Kindly share your MOQ and delivery options.\n\nRegards,\n${name}`,
   name => `Dear Sales Team,\n\nI’m ${name}. I came across your website and want to inquire about rim models suitable for farming equipment in my country.\n\nWarm regards,\n${name}`
 ];
 
