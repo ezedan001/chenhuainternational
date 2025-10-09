@@ -478,7 +478,7 @@ const translations = {
     workshop_video_section: "Unique Aspect of the Factory",
     workshop_video_subtitle: "See how our Agricultural Wheels & Tires are made",
     video1_title: "Hydrochloric Acid Etching",
-    video2_title: "Electrophoresis Production Line",
+    video2_title: "Cathodic Electrophoretic Coating",
     video3_title: "Spot Welding",
     video4_title: "Quality Inspection",
 
@@ -561,7 +561,7 @@ const translations = {
     workshop_video_section: "Aspect unique de l'usine",
     workshop_video_subtitle: "Découvrez comment nos roues et pneus agricoles sont fabriqués",
     video1_title: "Gravure à l'acide chlorhydrique",
-    video2_title: "Chaîne de production par électrophorèse",
+    video2_title: "Revêtement électrophorétique cathodique",
     video3_title: "Soudage par points",
     video4_title: "Contrôle qualité",
 
@@ -645,7 +645,7 @@ const translations = {
     workshop_video_section: "الجانب الفريد للمصنع",
     workshop_video_subtitle: "شاهد كيف تُصنع عجلات وإطاراتنا الزراعية",
     video1_title: "نقش بحمض الهيدروكلوريك",
-    video2_title: "خط إنتاج الإلكتروليز",
+    video2_title: "الطلاء الكهربائي الكاثودي",
     video3_title: "اللحام بالنقاط",
     video4_title: "فحص الجودة",
 
@@ -729,7 +729,7 @@ const translations = {
     workshop_video_section: "工厂独特亮点",
     workshop_video_subtitle: "了解我们的农业轮圈与轮胎如何制造",
     video1_title: "盐酸蚀刻",
-    video2_title: "电泳生产线",
+    video2_title: "阴极电泳涂层",
     video3_title: "点焊",
     video4_title: "质量检查",
 
