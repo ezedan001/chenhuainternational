@@ -1,0 +1,1012 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+}
+
+Dark mode styles body.dark-mode {
+    background-color: #000000;
+    color: #eee;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    border-bottom-color: #333;
+}
+
+
+body.dark-mode a,
+body.dark-mode .main-nav a,
+body.dark-mode .mobile-nav-list a {
+    color: #ddd;
+}
+
+body.dark-mode a:hover,
+body.dark-mode .main-nav a:hover,
+body.dark-mode .mobile-nav-list a:hover {
+    color: #ff9800;
+    background-color: transparent;
+}
+
+body.dark-mode .search-wrapper,
+body.dark-mode .mobile-search {
+    background-color: #222;
+    border-color: #444;
+}
+
+body.dark-mode .search-wrapper input,
+body.dark-mode .mobile-search input .mobile-nav-list {
+    background-color: #222;
+    color: #eee;
+    border: none;
+}
+
+body.dark-mode .language-select,
+body.dark-mode .mobile-language-select {
+    background-color: #222;
+    color: #eee;
+    border-color: #444;
+}
+
+
+body.dark-mode .mobile-menu,
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark-mode .hamburger-btn {
+    color: #eee;
+}
+
+body.dark-mode .hamburger-btn:hover {
+    color: #ff9800;
+    background-color: transparent;
+}
+
+body.dark-mode .cart-btn,
+body.dark-mode .mode-toggle,
+body.dark-mode .mobile-cart-btn,
+body.dark-mode .mobile-theme-toggle {
+    color: #ff9800;
+}
+
+body.dark-mode .search-wrapper button,
+body.dark-mode .mobile-search button {
+    background-color: #ff9800;
+    color: #121212;
+}
+
+body.dark-mode .search-wrapper button:hover,
+body.dark-mode .mobile-search button:hover {
+    background-color: #e68a00;
+}
+
+
+body.dark-mode .product-card {
+    background-color: #fffcfc10;
+    color: white;
+}
+
+body.dark-mode .featured-products {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark-mode h3 {
+    color: #eee;
+}
+
+body.dard-mode .featured-text {
+    color: white;
+    background-color: #222;
+}
+
+body.dark-mode .separator {
+    background-color: orange;
+    color: #666;
+}
+
+body.dark-mode .testimonial-text {
+    color: #eee;
+
+}
+
+body.dark-mode .testimonial-name {
+    color: #eee;
+}
+
+
+body.dark-mode .testimonials {
+    background-color: #222;
+}
+
+
+body.dark-mode .c2 {
+    color: #eee;
+}
+
+
+
+
+
+
+body.dark-mode .faq-section {
+    background-color: #222;
+    color: #aaa;
+}
+
+
+body.dark-mode .faq-answer {
+    background-color: #3d3c3c;
+    color: #eee;
+}
+
+body.dark-mode .footer {
+    background-color: #1e1e1e;
+    border-bottom-color: #333;
+    color: #eee;
+}
+
+
+body.dark-mode .foote {
+    background-color: #1e1e1e;
+    border-bottom-color: #333;
+    color: #eee;
+}
+
+/* Add any other dark mode color tweaks as needed */
+
+
+/* Container */
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(255, 102, 0, 0.4);
+}
+
+/* Logo */
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* Main Nav Desktop */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: #ff6600;
+    color: white;
+    outline: none;
+}
+
+/* Header Controls Desktop */
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Language Select Desktop */
+.language-select {
+    padding: 5px 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* Search Bar Desktop */
+.desktop-search {
+    position: relative;
+    background-color: #dbdbdb;
+    border-radius: 30px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    transition: all 0.3s ease;
+}
+
+.desktop-search input {
+    border: none;
+    background: transparent;
+    color: #fff;
+    padding: 8px 10px;
+    width: 220px;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.desktop-search button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.desktop-search button:hover {
+    background-color: #e65500;
+}
+
+/* Cart Button Desktop */
+.cart-btn {
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.cart-btn:hover {
+    color: #ff6600;
+}
+
+/* Mode Toggle Desktop */
+.mode-toggle {
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.mode-toggle:hover {
+    color: #ff6600;
+}
+
+/* Hamburger (Mobile) */
+.hamburger-btn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    display: none;
+    /* hidden on desktop */
+}
+
+/* Mobile Menu Panel */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: left 0.3s ease;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+/* Show mobile menu */
+.mobile-menu.active {
+    left: 0;
+}
+
+/* Close button mobile menu */
+.close-btn {
+    align-self: flex-end;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ff6600;
+}
+
+/* Mobile Nav List */
+.mobile-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
+}
+
+.mobile-nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.mobile-nav-list a:hover,
+.mobile-nav-list a:focus {
+    background-color: #ff6600;
+    color: white;
+    outline: none;
+}
+
+/* Language select mobile */
+.mobile-language-select {
+    padding: 8px 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* Mobile Search Container */
+.mobile-search-container {
+    position: relative;
+    background-color: #b4b2b2;
+    border-radius: 30px;
+    padding: 5px 15px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: auto;
+    transition: all 0.3s ease;
+}
+
+.mobile-search-container input {
+    border: none;
+    background: transparent;
+    color: #fff;
+    padding: 8px 10px;
+    width: 159px;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.mobile-search-container button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.mobile-search-container button:hover {
+    background-color: #e65500;
+}
+
+/* Mobile Cart Button */
+.mobile-cart-btn {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.mobile-cart-btn:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* Mobile Mode Toggle */
+.mobile-theme-toggle {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.mobile-theme-toggle:hover {
+    background-color: #ff6600;
+    color: #ffffff;
+}
+
+/* Responsive Queries */
+
+/* Mobile View */
+@media (max-width: 900px) {
+
+    /* Hide desktop nav and controls */
+    .main-nav,
+    .header-controls .language-select,
+    .desktop-search,
+    .cart-btn,
+    .mode-toggle {
+        display: none;
+    }
+
+    /* Show hamburger */
+    .hamburger-btn {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+GLOBAL
+========================= */
+
+
+/* =========================
+SECTION
+========================= */
+.team-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.team-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* =========================
+FILTER BUTTONS
+========================= */
+.team-filters {
+  margin-bottom: 30px;
+}
+
+.team-filters button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: #eaeaea;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.team-filters button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.team-filters .active {
+  background: #007bff;
+  color: #fff;
+}
+
+/* =========================
+GRID
+========================= */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* =========================
+CARD
+========================= */
+.team-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+
+/* =========================
+STATUS DOT
+========================= */
+.status {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status.online {
+  background: #28a745;
+  box-shadow: 0 0 10px #28a745;
+}
+
+/* =========================
+IMAGE
+========================= */
+.team-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+
+
+/* =========================
+TEXT
+========================= */
+.team-card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.role {
+  color: #007bff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.exp {
+  font-size: 13px;
+  color: #777;
+}
+
+.specialty {
+  font-size: 13px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.response {
+  font-size: 12px;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+/* =========================
+BUTTONS
+========================= */
+.team-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-buttons a,
+.team-buttons button {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* WhatsApp */
+.team-buttons a:first-child {
+  background: #25D366;
+  color: white;
+}
+
+/* Email */
+.team-buttons a:nth-child(2) {
+  background: #007bff;
+  color: white;
+}
+
+/* Profile */
+.profile-btn {
+  background: #333;
+  color: #fff;
+}
+
+.team-buttons a:hover,
+.profile-btn:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+SOCIAL ICONS
+========================= */
+.social-icons {
+  margin-top: 12px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  color: #555;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* =========================
+MODAL
+========================= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* MODAL CONTENT */
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+/* IMAGE */
+.modal-content img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.modal-content h2 {
+  margin: 10px 0;
+}
+
+.modal-content p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* ACTION BUTTONS */
+.modal-actions {
+  margin-top: 15px;
+}
+
+.modal-actions a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* WhatsApp */
+#modalWhatsapp {
+  background: #25D366;
+  color: white;
+}
+
+/* Email */
+#modalEmail {
+  background: #007bff;
+  color: white;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* =========================
+ANIMATION
+========================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .team-title {
+    font-size: 24px;
+  }
+
+  .team-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-buttons {
+    flex-direction: column;
+  }
+
+  .team-buttons a,
+  .team-buttons button {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cta-section {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.cta-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+.cta-buttons {
+  margin-bottom: 25px;
+}
+
+.cta-buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta-whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.cta-email {
+  background: #222;
+  color: white;
+}
+
+.cta-form input,
+.cta-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+.cta-form button {
+  width: 100%;
+  padding: 12px;
+  background: #ff9800;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background: rgb(255, 255, 255);
+  color: #000000;
+  padding: 3rem 1rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 10px rgba(255, 102, 0, 0.4);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 120px;
+  min-width: 200px;
+}
+
+.footer-logo img {
+  max-width: 60px;
+  margin-bottom: 10px;
+  border-radius: 60px;
+  height: 60px;
+  width: 60px;
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #ff6600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.footer-section ul li i {
+  margin-right: 8px;
+  color: #ff6600;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: white;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  /* background-color: #000000; */
+  color: #ff6600;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #e05500;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #000000;
+}

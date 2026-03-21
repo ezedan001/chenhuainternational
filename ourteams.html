@@ -59,7 +59,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ourteam.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
@@ -87,7 +87,7 @@
         <li><a href="products.html" data-i18n="products">Products</a></li>
         <li><a href="about.html" data-i18n="about">About</a></li>
         <li><a href="contact.html" data-i18n="contact">Contact</a></li>
-        <li><a href="ourteams.html" data-i18n="" >Our Teams</a></li>
+        <li><a href="ourteams.html" data-i18n="">Our Teams</a></li>
 
       </ul>
     </nav>
@@ -167,209 +167,442 @@
 
   <section class="team-section">
     <h2 class="team-title">Meet Our Export Team</h2>
+    <p class="team-subtitle">Professional team ready to serve global buyers</p>
 
+    <!-- FILTER -->
+    <div class="team-filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="sales">Sales</button>
+      <button data-filter="technical">Technical</button>
+      <button data-filter="manager">Manager</button>
+    </div>
+
+    <!-- GRID -->
     <div class="team-grid">
 
-      <!-- TEAM MEMBER -->
-      <div class="team-card" onclick="openProfile('john')">
+      <!-- MEMBER 1 -->
+      <div class="team-card" data-role="manager">
         <div class="status online"></div>
 
-        <img src="images/" alt="John">
+        <img class="lazy" data-src="images/sucky.png" alt="Suky">
 
-        <h3>John Chen</h3>
-        <p class="role">Export Sales Manager</p>
-
-        <p class="exp">8+ Years Experience</p>
-        <p class="specialty">Truck & OTR Tires</p>
+        <h3>Suky</h3>
+        <p class="role">CEO (Chief Executive Officer)</p>
+        <p class="exp">10+ Years Experience</p>
+        <p class="specialty">Strategic Vision & Global Partnerships</p>
+        <p class="response">⚡ Replies in 5 mins</p>
 
         <div class="team-buttons">
-          <a href="https://wa.me/234XXXXXXXXXX?text=Hello%20John%20I%20am%20interested%20in%20your%20tires"
+          <a href="https://wa.me/8618765465833?text=Hello%20Suky%2C%20I%20want%20to%20discuss%20business%20partnership"
             target="_blank">WhatsApp</a>
-          <a href="mailto:john@company.com">Email</a>
-          <button>Profile</button>
+          <a href="mailto:suky@chenhua-global.com">Email</a>
+          <button class="profile-btn" data-name="Suky" data-role="CEO (Chief Executive Officer)"
+            data-details="Strategic Vision & Global Partnerships. Driving innovation and building sustainable trust with global clients."
+            data-img="images/suky.png">
+            Profile
+          </button>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/suky-cui-420403179"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/share/182BvWRhng/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/sukycui"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/chenhuawheels"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- MEMBER 2 -->
+      <div class="team-card" data-role="sales">
+        <div class="status online"></div>
+
+        <img class="lazy" data-src="images/lina.png" alt="Lina">
+
+        <h3>Lina</h3>
+        <p class="role">Human Resources Director</p>
+        <p class="exp">6+ Years</p>
+        <p class="specialty">Talent & Culture. Building strong professional teams.</p>
+        <p class="response">⚡ Fast Response</p>
+
+        <div class="team-buttons">
+          <a href="https://wa.me/8618765465833?text=Hello%20Lina%2C%20I%20need%20price%20for%20agricultural%20tires"
+            target="_blank">WhatsApp</a>
+          <a href="mailto:lina@chenhua-global.com">Email</a>
+          <button class="profile-btn" data-name="Lina" data-role="Human Resources Director"
+            data-details="Talent & Culture. Cultivating a professional team to uphold operational excellence."
+            data-img="images/lina.png">
+            Profile
+          </button>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/lina-xie-42a0b2149/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/lina.xie.1806"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- MEMBER 3 -->
+      <div class="team-card" data-role="technical">
+        <div class="status online"></div>
+
+        <img class="lazy" data-src="images/jax.png" alt="Jax">
+
+        <h3>Jax</h3>
+        <p class="role">Regional Manager - South America</p>
+        <p class="exp">12+ Years</p>
+        <p class="specialty">Expert in LATAM tire market & technical support</p>
+
+        <div class="team-buttons">
+          <a href="https://wa.me/8617661673771?text=Hello%2C%20I%20need%20OTR%20tire%20specifications"
+            target="_blank">WhatsApp</a>
+          <a href="mailto:jax@company.com">Email</a>
+          <button class="profile-btn" data-name="Jax" data-role="Regional Manager"
+            data-details="Expert in South American markets, technical tire specs, and strong client relations."
+            data-img="images/jax.png">
+            Profile
+          </button>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/jax-niu-625395393/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/profile?id=61581737387824"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/chenhuajax/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- MEMBER 4 -->
+      <div class="team-card" data-role="sales">
+        <div class="status online"></div>
+
+        <img class="lazy" data-src="images/otto.png" alt="Otto">
+
+        <h3>Otto</h3>
+        <p class="role">Head of Production</p>
+        <p class="exp">7+ Years</p>
+        <p class="specialty">Manufacturing Excellence & Quality Control</p>
+
+        <div class="team-buttons">
+          <a href="https://wa.me/2340000000000?text=Hello%2C%20I%20am%20interested%20in%20truck%20tires"
+            target="_blank">WhatsApp</a>
+          <a href="mailto:otto@chenhua-global.com">Email</a>
+          <button class="profile-btn" data-name="Otto" data-role="Head of Production"
+            data-details="Oversees lean production and strict quality control for every batch."
+            data-img="images/otto.png">
+            Profile
+          </button>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
         </div>
       </div>
 
 
-      <div class="team-card" onclick="openProfile('john')">
+      <!-- MEMBER 5 -->
+      <div class="team-card" data-role="technical">
         <div class="status online"></div>
 
-        <img src="images/team1.jpg" alt="John">
+        <img class="lazy" data-src="images/liam.png" alt="Liam">
 
-        <h3>John Chen</h3>
-        <p class="role">Export Sales Manager</p>
-
-        <p class="exp">8+ Years Experience</p>
-        <p class="specialty">Truck & OTR Tires</p>
+        <h3>Liam</h3>
+        <p class="role">CTO (Chief Technical Officer)</p>
+        <p class="exp">15+ Years</p>
+        <p class="specialty">Technical R&D. Leading engineering breakthroughs</p>
+        <p class="response">⚡ Expert Level Support</p>
 
         <div class="team-buttons">
-          <a href="https://wa.me/234XXXXXXXXXX?text=Hello%20John%20I%20am%20interested%20in%20your%20tires"
+          <a href="https://wa.me/8618765465833?text=Hello%20Liam%2C%20I%20need%20technical%20consultation"
             target="_blank">WhatsApp</a>
-          <a href="mailto:john@company.com">Email</a>
-          <button>Profile</button>
+          <a href="mailto:liam@chenhua-global.com">Email</a>
+          <button class="profile-btn" data-name="Liam" data-role="CTO (Chief Technical Officer)"
+            data-details="Technical R&D. Leading engineering breakthroughs to ensure products stay at the industry forefront."
+            data-img="images/liam.png">
+            Profile
+          </button>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
 
 
-
-      <div class="team-card" onclick="openProfile('john')">
+      <!-- MEMBER 6 -->
+      <div class="team-card" data-role="technical">
         <div class="status online"></div>
 
-        <img src="images/team1.jpg" alt="John">
+        <img class="lazy" data-src="images/leo.png" alt="Leo">
 
-        <h3>John Chen</h3>
-        <p class="role">Export Sales Manager</p>
-
-        <p class="exp">8+ Years Experience</p>
-        <p class="specialty">Truck & OTR Tires</p>
+        <h3>Leo</h3>
+        <p class="role">Lead Structural Engineer</p>
+        <p class="exp">12+ Years</p>
+        <p class="specialty">Precision Design & Structural Integrity</p>
+        <p class="response">⚡ Technical Expert</p>
 
         <div class="team-buttons">
-          <a href="https://wa.me/234XXXXXXXXXX?text=Hello%20John%20I%20am%20interested%20in%20your%20tires"
+          <a href="https://wa.me/8618765465833?text=Hello%20Leo%2C%20I%20need%20product%20design%20support"
             target="_blank">WhatsApp</a>
-          <a href="mailto:john@company.com">Email</a>
-          <button>Profile</button>
+          <a href="mailto:leo@chenhua-global.com">Email</a>
+          <button class="profile-btn" data-name="Leo" data-role="Lead Structural Engineer"
+            data-details="Precision Design. Expert in structural integrity, specialized in optimizing product durability and performance."
+            data-img="images/leo.png">
+            Profile
+          </button>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+
+      <!-- MEMBER 7 -->
+      <div class="team-card" data-role="manager">
+        <div class="status online"></div>
+
+        <img class="lazy" data-src="images/kari.png" alt="Kari">
+
+        <h3>Kari</h3>
+        <p class="role">Regional Manager - Europe</p>
+        <p class="exp">10+ Years</p>
+        <p class="specialty">EU Market Solutions & Localization</p>
+        <p class="response">⚡ EU Market Specialist</p>
+
+        <div class="team-buttons">
+          <a href="https://wa.me/8618765465833?text=Hello%20Kari%2C%20I%20am%20interested%20in%20EU%20market%20solutions"
+            target="_blank">WhatsApp</a>
+          <a href="mailto:kari@chenhua-global.com">Email</a>
+          <button class="profile-btn" data-name="Kari" data-role="Regional Manager - Europe"
+            data-details="EU Market Solutions. Dedicated to meeting European standards and providing localized support for EU partners."
+            data-img="images/kari.png">
+            Profile
+          </button>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+
+      <!-- MEMBER 8 -->
+      <div class="team-card" data-role="manager">
+        <div class="status online"></div>
+
+        <img class="lazy" data-src="images/daniel.png" alt="Daniel">
+
+        <h3>Daniel</h3>
+        <p class="role">Regional Manager - Africa</p>
+        <p class="exp">3+ Years</p>
+        <p class="specialty">Regional Strategy & Infrastructure Support</p>
+        <p class="response">⚡ Africa Market Expert</p>
+
+        <div class="team-buttons">
+          <a href="https://wa.me/2340000000000?text=Hello%20Daniel%2C%20I%20want%20to%20discuss%20African%20market%20opportunities"
+            target="_blank">WhatsApp</a>
+          <a href="mailto:daniel@chenhua-global.com">Email</a>
+          <button class="profile-btn" data-name="Daniel" data-role="Regional Manager - Africa"
+            data-details="Regional Strategic Growth. Focusing on tailored solutions and infrastructure support for the African market."
+            data-img="images/daniel.png">
+            Profile
+          </button>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
 
 
     </div>
+  </section>
 
+  <!-- MODAL -->
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeProfileModal()">&times;</span>
 
+      <img id="modalImg" src="" alt="Profile Photo">
 
-    <style>
-      .team-section {
-        padding: 80px 5%;
-        text-align: center;
-      }
+      <h2 id="modalName"></h2>
+      <p id="modalRole"></p>
+      <p id="modalDetails"></p>
 
-      .team-title {
-        font-size: 2.5rem;
-        color: #ff6600;
-        margin-bottom: 40px;
-      }
-
-      .team-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-      }
-
-      /* CARD */
-      .team-card {
-        background: #1f1f1f;
-        border-radius: 20px;
-        padding: 20px;
-        color: #fff;
-        position: relative;
-        cursor: pointer;
-        transition: 0.4s;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-      }
-
-      .team-card:hover {
-        transform: translateY(-10px) scale(1.03);
-        box-shadow: 0 20px 40px rgba(255, 102, 0, 0.3);
-      }
-
-      /* IMAGE */
-      .team-card img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 15px;
-      }
-
-      /* STATUS DOT */
-      .status {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-      }
-
-      .status.online {
-        background: #00ff6a;
-      }
-
-      /* TEXT */
-      .role {
-        color: #ff6600;
-        font-weight: 600;
-      }
-
-      .exp,
-      .specialty {
-        font-size: 0.9rem;
-        color: #bbb;
-      }
-
-      /* BUTTONS */
-      .team-buttons {
-        display: flex;
-        gap: 8px;
-        margin-top: 15px;
-      }
-
-      .team-buttons a,
-      .team-buttons button {
-        flex: 1;
-        padding: 8px;
-        border: none;
-        border-radius: 8px;
-        background: #ff6600;
-        color: #fff;
-        cursor: pointer;
-        font-size: 0.85rem;
-      }
-
-      .team-buttons a:hover,
-      .team-buttons button:hover {
-        background: #e65c00;
-      }
-    </style>
-
-
-
-
-    <div id="profileModal" class="modal">
-      <div class="modal-content">
-        <h2 id="profileName"></h2>
-        <p id="profileRole"></p>
-        <p id="profileDetails"></p>
-
-        <button onclick="closeProfile()">Close</button>
+      <div class="modal-actions">
+        <a id="modalWhatsapp" href="#" target="_blank">WhatsApp</a>
+        <a id="modalEmail" href="#">Email</a>
       </div>
     </div>
+  </div>
 
 
 
 
 
-    <script>
-      function openProfile(name) {
-        document.getElementById("profileModal").style.display = "flex";
 
-        if (name === "john") {
-          document.getElementById("profileName").innerText = "John Chen";
-          document.getElementById("profileRole").innerText = "Export Manager";
-          document.getElementById("profileDetails").innerText =
-            "Specialized in truck tires, OTR tires, global export operations.";
+
+
+
+  <script>
+    // =========================
+    // FILTER SYSTEM
+    // =========================
+    const filterButtons = document.querySelectorAll('.team-filters button');
+    const cards = document.querySelectorAll('.team-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+
+        // remove active class
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-role') === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+      });
+    });
+
+
+    // =========================
+    // PROFILE MODAL
+    // =========================
+    const modal = document.getElementById('profileModal');
+    const modalName = document.getElementById('modalName');
+    const modalRole = document.getElementById('modalRole');
+    const modalDetails = document.getElementById('modalDetails');
+    const modalImg = document.getElementById('modalImg');
+    const modalWhatsapp = document.getElementById('modalWhatsapp');
+    const modalEmail = document.getElementById('modalEmail');
+
+    const profileButtons = document.querySelectorAll('.profile-btn');
+
+    profileButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+
+        const name = btn.dataset.name;
+        const role = btn.dataset.role;
+        const details = btn.dataset.details;
+        const img = btn.dataset.img;
+
+        // SET DATA
+        modalName.textContent = name;
+        modalRole.textContent = role;
+        modalDetails.textContent = details;
+        modalImg.src = img;
+
+        // SMART WHATSAPP MESSAGE
+        let message = `Hello ${name}, I am interested in your products.`;
+
+        if (role.toLowerCase().includes('sales')) {
+          message = `Hello ${name}, I want pricing details for your tires and rims.`;
         }
+        if (role.toLowerCase().includes('technical')) {
+          message = `Hello ${name}, I need technical specifications for OTR/Truck tires.`;
+        }
+        if (role.toLowerCase().includes('ceo') || role.toLowerCase().includes('manager')) {
+          message = `Hello ${name}, I want to discuss a business partnership opportunity.`;
+        }
+
+        const encodedMsg = encodeURIComponent(message);
+
+        // SET CONTACT LINKS (CHANGE NUMBER IF NEEDED)
+        modalWhatsapp.href = `https://wa.me/8618765465833?text=${encodedMsg}`;
+        modalEmail.href = `mailto:${name.toLowerCase()}@chenhua-global.com`;
+
+        // SHOW MODAL
+        modal.style.display = 'flex';
+
+      });
+    });
+
+
+    // =========================
+    // CLOSE MODAL
+    // =========================
+    function closeProfileModal() {
+      modal.style.display = 'none';
+    }
+
+    // close when clicking outside
+    window.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
       }
-
-      function closeProfile() {
-        document.getElementById("profileModal").style.display = "none";
-      }
-    </script>
+    });
 
 
+    // =========================
+    // LAZY LOAD IMAGES (FIX YOUR ISSUE)
+    // =========================
+    const lazyImages = document.querySelectorAll('img.lazy');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.remove('lazy');
+          observer.unobserve(img);
+        }
+      });
+    });
+
+    lazyImages.forEach(img => {
+      observer.observe(img);
+    });
+  </script>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+  <section class="cta-section">
+    <div class="cta-container">
+
+      <h2>Ready to Work With Our Team?</h2>
+      <p>Contact us today for pricing, product details, and fast support from our experts.</p>
+
+      <div class="cta-buttons">
+        <a href="https://wa.me/8618765465833?text=Hello%2C%20I%20am%20interested%20in%20your%20products" target="_blank"
+          class="cta-whatsapp">
+          💬 WhatsApp Us
+        </a>
+
+        <a href="mailto:sales@chenhua-global.com" class="cta-email">
+          📧 Send Email
+        </a>
+      </div>
+
+      <!-- MINI FORM (OPTIONAL BUT POWERFUL) -->
+      <form class="cta-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="What products are you interested in?" required></textarea>
+        <button type="submit">Send Inquiry</button>
+      </form>
+
+    </div>
   </section>
 
 
@@ -381,6 +614,138 @@
 
 
 
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo & About -->
+      <div class="footer-section footer-logo">
+        <img src="images/logo 2.jpg" alt="CHENHUA AUTO Logo" />
+
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-section">
+        <h4 data-i18n="quick_links">Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="home">Home</a></li>
+          <li><a href="products.html" data-i18n="products">Products</a></li>
+          <li><a href="about.html" data-i18n="about_us">About Us</a></li>
+          <!-- <li><a href="#">FAQs</a></li> -->
+          <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section">
+        <h4 data-i18n="contact">Contact</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Dongying, China</li>
+          <li><i class="fas fa-phone-alt"></i> +861 8678 641833</li>
+          <li><i class="fas fa-envelope"></i> suckycui@163.com, suky@chenhua-global.com</li>
+        </ul>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="footer-section">
+        <h4 data-i18n="follow_us">Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/182BvWRhng/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sukycui?igsh=ZXNrcm1vOWJhOG1q"><i class="fab fa-instagram"></i></a>
+          <a href=" https://www.linkedin.com/in/suky-cui-420403179"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/chenhuawheels"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="foote">
+        &copy; 2018 - <span id="year"></span> CHENHUA INERNATIONAL.
+        All rights reserved. |
+        <a href="privacy.html" data-i18n="privacy_policy">Privacy Policy</a> |
+        <a href="terms.html" data-i18n="terms_of_service">Terms of Service</a>
+      </p>
+    </div>
+
+  </footer>
+
+
+
+  <script>
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMobileMenuBtn = document.getElementById('closeMobileMenu');
+
+    function openMobileMenu() {
+      mobileMenu.classList.add('active');
+      hamburgerBtn.setAttribute('aria-expanded', 'true');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('active');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+    }
+
+    // Event listeners
+    hamburgerBtn.addEventListener('click', openMobileMenu);
+    closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
+
+    // Optional: close menu when clicking outside menu on mobile (not required, but user friendly)
+    document.addEventListener('click', (e) => {
+      if (
+        mobileMenu.classList.contains('active') &&
+        !mobileMenu.contains(e.target) &&
+        !hamburgerBtn.contains(e.target)
+      ) {
+        closeMobileMenu();
+      }
+    });
+
+
+
+    // Elements
+    const modeToggle = document.getElementById('modeToggle');
+    const mobileModeToggle = document.getElementById('mobileModeToggle');
+
+    // Apply saved theme on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+    });
+
+
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+        modeToggle.textContent = '☀️'; // change icon to sun
+        if (mobileModeToggle) mobileModeToggle.textContent = '☀️ Light Mode';
+      } else {
+        localStorage.setItem('theme', 'light');
+        modeToggle.textContent = '🌓'; // moon icon
+        if (mobileModeToggle) mobileModeToggle.textContent = '🌓 Dark Mode';
+      }
+    }
+
+    // Event listeners
+    if (modeToggle) modeToggle.addEventListener('click', toggleDarkMode);
+    if (mobileModeToggle) mobileModeToggle.addEventListener('click', toggleDarkMode);
+
+
+  </script>
 
 
 </body>
