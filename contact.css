@@ -232,8 +232,8 @@ body.dark-mode .map-section{
 
 .main-nav a:hover,
 .main-nav a:focus {
-  background-color: #ff6600;
-  color: white;
+  /* background-color: #ff6600; */
+  color: #ff6600;
   outline: none;
 }
 
@@ -392,8 +392,8 @@ body.dark-mode .map-section{
 
 .mobile-nav-list a:hover,
 .mobile-nav-list a:focus {
-  background-color: #ff6600;
-  color: white;
+  /* background-color: #ff6600; */
+  color: #ff6600;
   outline: none;
 }
 
