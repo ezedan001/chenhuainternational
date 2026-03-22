@@ -299,8 +299,8 @@ body.dark-mode strong {
 
 .main-nav a:hover,
 .main-nav a:focus {
-  background-color: #ff6600;
-  color: white;
+  /* background-color: #ff6600; */
+  color: #ff6600;
   outline: none;
 }
 
@@ -459,8 +459,8 @@ body.dark-mode strong {
 
 .mobile-nav-list a:hover,
 .mobile-nav-list a:focus {
-  background-color: #ff6600;
-  color: white;
+  /* background-color: #ff6600; */
+  color: #ff6600;
   outline: none;
 }
 
