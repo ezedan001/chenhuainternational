@@ -166,7 +166,7 @@ ${msg}
 
 Our CHENHUA AUTO team will reply as soon as possible.`;
 
-  const phone = "8618054365167"; // Replace with your WhatsApp number
+  const phone = "8618678641833"; // Replace with your WhatsApp number
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(finalMessage)}`;
   window.open(url, '_blank');
 }
@@ -195,7 +195,7 @@ Looking forward to your reply.
 CHENHUA AUTO`;
 
   const subject = `Inquiry: ${name}`;
-  const email = "18054365167@163.com"; // Replace with your real email
+  const email = "suky@chenhua-global.com"; // Replace with your real email
 
   const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullBody)}`;
   window.open(gmailURL, '_blank');
@@ -233,7 +233,7 @@ carousel.addEventListener("mousedown", (e) => {
 carousel.addEventListener("mouseleave", () => { isDown = false; carousel.classList.remove("active"); });
 carousel.addEventListener("mouseup", () => { isDown = false; carousel.classList.remove("active"); });
 carousel.addEventListener("mousemove", (e) => {
-  if(!isDown) return;
+  if (!isDown) return;
   e.preventDefault();
   const x = e.pageX - carousel.offsetLeft;
   const walk = (x - startX) * 2;
@@ -243,7 +243,7 @@ carousel.addEventListener("mousemove", (e) => {
 // Auto-scroll carousel
 setInterval(() => {
   carousel.scrollLeft += 2;
-  if(carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth){
+  if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
     carousel.scrollLeft = 0;
   }
 }, 30);
@@ -257,8 +257,8 @@ function filterProducts() {
 
   cards.forEach(card => {
     card.style.display = "none";
-    if((!category || card.dataset.category === category) &&
-       (!size || card.dataset.size === size)) {
+    if ((!category || card.dataset.category === category) &&
+      (!size || card.dataset.size === size)) {
       card.style.display = "block";
     }
   });

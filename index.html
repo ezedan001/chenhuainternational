@@ -941,7 +941,7 @@ Best regards,
 ${name}`);
 
         // ✔️ This link works on all devices with Gmail app or browser
-        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=suky@chenhua-global.com&su=${subject}&body=${body}`, '_blank');
+        window.location.href = `mailto:suky@chenhua-global.com?subject=${subject}&body=${body}`;
       }
 
       // ✅ Suggest random product
